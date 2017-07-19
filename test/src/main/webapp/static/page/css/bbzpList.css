@@ -1,0 +1,70 @@
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+
+.tab-search > .tab-searchBox{display:none;}
+.tab-search > .active{display:block;}
+
+.nav-tabs{height:32px;float:right;margin-top:5px;padding:0;}
+.nav-tabs > li{height:32px;}
+.nav-tabs > li > a{height:32px;}
+.col-md-6{margin:5px 0;}
+.photoList{width:100%;height:auto;padding-top:20px;}
+
+.monthList{width:100%;height:auto;}
+.monthList .time{width:100%;height:34px;line-height:34px;font-size:24px;font-weight:bold;border-bottom:1px solid #eaedf1;}
+.monthList ul{width:100%;height:auto;}
+.monthList ul li{width:140px;height:140px;float:left;margin:10px 10px 10px 0;}
+.monthList ul li .img{width:100%;height:100%;position:relative;overflow:hidden;}
+.monthList ul li .img img{position:absolute;}
+
+.xcList{width:100%;height:auto;}
+.xcbox{width:200px;height:auto;float:left;margin:20px 20px 0 0;cursor:pointer;}
+.xcbox .img{width:200px;height:150px;}
+.xcbox .img img{width:100%;height:100%;}
+.xcbox .xcName{width:200px;height:30px;line-height:30px;}
+.xcbox .xcName span{float:left;}
+.xcbox .xcName span.name{font-weight:bold;}
+.xcbox .xcName span.num{color:#999;}
+.xcBoxTitle{font-size:24px;float:left;height:32px;line-height:32px;margin:5px 0;max-width:400px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.detailPhoto{display:none;}
+.detailPhoto ul{width:100%;height:auto;}
+.detailPhoto ul li{width:140px;height:140px;float:left;margin:10px 10px 10px 0;}
+.detailPhoto ul li .img{width:100%;height:100%;}
+.detailPhoto ul li .img img{width:100%;height:100%;}
+
+.img{position: relative;}
+.checkBox{width:100%;height:100%;position:absolute;left:0;top:0;border:4px solid #32ad64;display:none;z-index:9;}
+.checkBox i{float:right;width:29px;height:20px;border:4px solid #32ad64;border-top:none;border-right:none;display:none;cursor: pointer;}
+
+.enlargeBtn{position: absolute;width:140px;height:120px;top:20px;left:0;z-index:10;display: none;cursor: zoom-in;background:url(../img/zoom-in.png) center no-repeat;background-size: 30%;}
+
+
+.uploadList{width:100%;height:auto;margin-bottom:20px;margin:0 50px;}
+.uploadList .photoBox .addLine{width:90px;height:90px;overflow:hidden;text-align:center;background:#dadada;position:relative;}
+.uploadList .photoBox .addLine img{width:50px;height:50px;margin:20px;}
+.uploadList .photoBox .addLine button{width:100%;height:100%;position:absolute;left:0;top:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+.uploadBox{width:90%;height:auto;padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #dbe1e8;display:none;}
+.infoBox{width:450px;height:92px;float:right;margin:5px;}
+.infoBox .text{width:300px;height:90px;float:left;}
+.infoBox .editText{width:450px;height:90px;float:left;}
+.infoBox .text span{float:left;margin-right:5px;}
+.infoBox .text textarea{width:100%;float:left;}
+.infoBox .selectBox{width:105px;height:90px;float:left;margin-left:10px;}
+.infoBox .select{width:100%;margin:5px 0;}
+
+.imageList{width:100%;height:auto;float:left;}
+.imageList .addBox{width:47px;height:47px;border:1px solid #dbe1e8;float:left;margin:5px;}
+.imageList .photoBox{width:47px;height:47px;border:1px solid #dbe1e8;float:left;margin:5px;}
+.imageList .photoBox .img{width:45px;height:45px;overflow:hidden;background:black;}
+.imageList .photoBox .img .gallery-image{width:100%;height:100%;position:relative;}
+.imageList .photoBox .img .gallery-image img{max-width:none;}
+.imageList .photoBox .img img{position:absolute;}
+.imageList .addBox .addImg{width:45px;height:45px;overflow:hidden;text-align:center;background:#dadada;position:relative;background:url(../../../styles/wlzy/images/addLine.png);background-repeat: no-repeat;background-position:center;background-size:40px 40px;}
+.imageList .addBox .addImg img{height:100%;}
+.imageList .addBox .addImg input[type=file]{font-size:80px;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;position:absolute;left:0;top:0;padding:0;}
+.imageList .photoBox .addLine{width:45px;height:45px;overflow:hidden;text-align:center;background:#dadada;position:relative;}
+.imageList .photoBox .addLine img{width:50px;height:50px;margin:20px;}
+.imageList .photoBox .addLine button{width:100%;height:100%;position:absolute;left:0;top:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+.float_right{float:right;}
+#addPageBtn_image{position: absolute;z-index:100;left:0;top:1px;width:52px;height:30px;overflow: hidden;border-radius:5px;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+.swfupload{position: absolute;}

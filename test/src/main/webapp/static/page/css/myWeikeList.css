@@ -1,0 +1,47 @@
+ul,li{list-style:none;padding:0;margin:0;}
+a{text-decoration: none;}
+.cl{clear:both;}
+.noData{width:100%;height:150px;line-height:150px;text-align: center;border:1px solid #eee;border-radius:5px;margin:10px 0;}
+.transcoding{width:200px;height:22px;background: url("../img/myVideoBg.png");}
+.pending{width:200px;height:22px;background: url("../img/myVideoBg.png") 0 -30px;}
+
+.selectBox{width:200px;float:left;margin:1px;}
+.inputBox{width:200px;float:left;margin:0 10px;}
+.btnBox{width:70px;float:left;margin:1px;}
+.lineBox{width:100%;float:left;margin-top:10px;background: #f7f7f7;padding:10px 20px;}
+.lineBox input[type='checkbox']{margin:8.5px 4px 8.5px 4px;}
+.lineBox button{margin-left:15px;}
+.myWeikeList{float:left;width:100%;}
+.myWeikeBox{float:left;width:100%;height:160px;position: relative;margin:10px 0;padding:20px;background: #f7f7f7;border:1px solid #f6f6f6;border-radius:5px;}
+.myWeikeBox .l{width:20px;height:120px;position: absolute;left:20px;top:20px;text-align: center;}
+.myWeikeBox .m{height:120px;margin:0 90px 0 40px;overflow: hidden;position: relative;}
+.myWeikeBox .m .headerImg{width:200px;height:120px;position: absolute;top:0;left:0;}
+.myWeikeBox .m .headerImg .failedHeader{width:100%;height:100%;background: url("../img/myVideoBg.png") -210px -120px;}
+.myWeikeBox .m .headerImg .handleHeader{width:100%;height:100%;background: url("../img/myVideoBg.png") -210px 0;}
+.myWeikeBox .m .headerImg img{width:100%;height:100%;}
+.myWeikeBox .m .infoBox{margin-left:210px;}
+.myWeikeBox .m .infoBox .info-title{width:100%;height:40px;line-height:40px;}
+.myWeikeBox .m .infoBox .info-title a{font-size: 18px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.myWeikeBox .m .infoBox .info-title a:hover{text-decoration: none;color:#31d3fb;}
+.myWeikeBox .m .infoBox .info-time{width:100%;height:30px;line-height:30px;}
+.myWeikeBox .m .infoBox .info-count{width:100%;height:30px;line-height:30px;}
+.myWeikeBox .m .infoBox .info-count span{margin-right:10px;}
+.myWeikeBox .r{width:70px;height:120px;position: absolute;right:20px;top:20px;text-align: center;}
+
+
+#detailForm .headerImg{width:200px;height:120px;}
+#detailForm .headerImg img{width:100%;height:100%;}
+#detailForm .treeBox{width:100%;height:150px;border:1px solid #eee;border-radius:5px;padding:8px;overflow-y: auto;}
+#detailForm .detail-content{width:100%;height:150px;}
+ul#enclosure{width:100%;margin-top:-5px;}
+ul#enclosure li{width:100%;height:30px;line-height:30px;}
+ul#enclosure li a{max-width:100%;display:inline-block;padding-top:7px;height:30px;line-height:30px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.imageList{width:100%;height:auto;float:left;}
+.imageList .fileItem{float:left;margin-right:20px;}
+.fileItem img{height:30px;}
+
+.fileBtn{position: relative;width:70px;height:30px;}
+.uploadShow{width:70px;height:30px;line-height:30px;background-color: #fff;font-size: 14px;color:#428bca;cursor: pointer;position: absolute;left:0;top:0;z-index:88;}
+.uploadShow:hover{color:#3498db;}
+#filePicker{width:70px;height:30px;overflow: hidden;}

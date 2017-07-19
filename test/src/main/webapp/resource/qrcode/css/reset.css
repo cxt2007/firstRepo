@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td {margin: 0;padding: 0;}
+ul,ol { list-style: none;}
+a { color:#3366cc; text-decoration: none;}
+a:hover { text-decoration: underline; color:#37579e;}
+img { border:0 none; vertical-align:middle;}
+table {border-collapse: collapse;border-spacing: 0;}
+td,th { border: 1px solid #ccc;}
+input{vertical-align:middle;}
+html { overflow-y: hidden;font-size:10px; font-family:'microsoft Yahei' \5b8b\4f53;}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+h1{font-size:1.7rem;font-weight:normal;}
+h2{font-size:1.8rem;}
+a:focus,input:focus,textarea:focus{ -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+*,*:after,*:before { box-sizing: border-box;}
+
+header, nav, section, article, aside, footer { display: block;}
+html{width:100%;height:100%;overflow:hidden;}
+body{width:100%;height:100%;overflow:hidden;}
+
+.cf:before, .cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
+.clear{width:0;height:0;clear:both;overflow:hidden;}
+
+body{background:#fff;}
+div {    
+    font-size: 16px; // 默认写上dpr为1的fontSize
+}
+[data-dpr="2"] div {
+    font-size: 32px;
+}
+[data-dpr="3"] div {
+    font-size: 48px;
+}
+a:link,a:link *,a:visited,a:visited *,a:hover,a:hover *,a:active,a:active *{
+    text-decoration:none;
+}

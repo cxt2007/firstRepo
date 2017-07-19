@@ -1,0 +1,81 @@
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+.hide{display:none !important;}
+
+.col-md-6{margin:5px 0;}
+.autoWidth{width:auto;}
+.tag{background:#ccc;padding:5px 10px;border-radius:5px;margin:5px;}
+.m_r_0{margin-right:0 !important;}
+.color_black{color:#394263 !important;}
+
+.stateTitle{width:100%;height:30px;line-height:30px;margin:10px 0;}
+.stateTitle span{float:left;height:30px;line-height:30px;color:#0000ff;padding:0 5px;margin-right:10px;cursor:pointer;border-radius:5px;background:#eee;color:#333;}
+.stateTitle span.active{color:#0000ff;}
+.stateTitle span:hover{background:#aaa;color:#fff;}
+
+.photoList{padding-top:0;border-top:none;margin-top:5px;}
+
+.chosen-container{vertical-align: baseline;}
+
+.zthdList{width:100%;height:auto;}
+.zthdList ul{width:100%;height:auto;}
+.zthdList ul li{width:240px;height:212px;margin-right:20px;margin-bottom:20px;float:left;}
+.zthdList ul li .t{width:100%;height:140px;float:left; cursor:pointer;}
+.zthdList ul li .t .img{width:100%;height:100%;position:relative;}
+.zthdList ul li .t .img img{width:100%;height:100%;}
+.zthdList ul li .t .img .describeBg{position:absolute;width:100%;bottom:0;left:0;height:40px;line-height:40px;background:#000;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+.zthdList ul li .t .img .describe{position:absolute;width:100%;bottom:0;left:0;height:40px;line-height:40px;color:#fff;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;padding:0 5px;}
+.zthdList ul li .m{width:100%;padding:10px 0;float:left;}
+.zthdList ul li .m .state{float:left;padding:5px 0;border-radius:5px;}
+.zthdList ul li .m .editBtn{display:block;margin-left:46px;margin-right:60px;}
+.zthdList ul li .m .editBtn a{float:left;width:28%;margin-right:2%;padding:5px 0;text-align:center;}
+.zthdList ul li .m .editBtn a.w_40_per{width:40%;}
+.zthdList ul li .m .editBtn a:hover{text-decoration:none;}
+.zthdList ul li .m .commentNum{float:right;width:50px;border-radius:5px;}
+.zthdList ul li .m .commentNum label{float:left;height:28px;line-height:28px;font-weight:normal;margin:0;}
+.zthdList ul li .m .commentNum label.count{width:22px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;text-align:right;}
+.zthdList ul li .m .commentNum label.text{width:28px;}
+.zthdList ul li .b{width:100%;height:auto;float:left;}
+.zthdList ul li .b span{float:left;padding:3px;}
+
+ul.xsjbList{width:100%;}
+ul.xsjbList li{float:left;margin:5px;min-width:100px;}
+ul.xsjbList li a{display:block;padding:5px 10px;border:1px solid #aaa;border-radius:5px;cursor:pointer;background:#fff;text-align:center;}
+ul.xsjbList li a:hover{text-decoration:none;background:#eee;}
+ul.xsjbList li a.active{text-decoration:none;background:#eee;}
+ul.xsjbList{width:100%;}
+
+.appraiseBox{width:100%;padding:0 10px;float:left;margin-bottom:20px;border-top:1px solid #d1d1d1;}
+.appraiseBox:first-child{border-top:none;}
+.appraiseBox .t{width:100%;height:30px;line-height:30px;}
+.appraiseBox .t span{margin-left:10px;}
+.appraiseBox .t a{float:right;height:30px;line-height:30px;padding:0 5px;}
+.appraiseBox .m{margin:10px 0;}
+.appraiseBox .b{margin:10px 0;}
+.appraiseBox .b ul{width:100%;height:auto;}
+.appraiseBox .b ul li{width:80px;height:80px;float:left;margin-right:10px;margin-bottom:10px;}
+.appraiseBox .b ul li .img{width:100%;height:100%;}
+.appraiseBox .b ul li .img img{width:100%;height:100%;}
+
+.editAppraise{width:100%;padding:10px;float:left;}
+.editAppraise > label{width:100%;}
+
+.fileuploadBtn{width:100%;height:60px;float:left;}
+
+.leftForm_20{float:left;width:20%;}
+.leftForm_30{float:left;width:30%;}
+.leftForm_40{float:left;width:40%;}
+.leftForm_50{float:left;width:50%;}
+.leftForm_60{float:left;width:60%;}
+.leftForm_70{float:left;width:70%;}
+.leftForm_80{float:left;width:80%;}
+.rightForm_20{float:left;width:20%;}
+.rightForm_30{float:left;width:30%;}
+.rightForm_40{float:left;width:40%;}
+.rightForm_50{float:left;width:50%;}
+.rightForm_60{float:left;width:60%;}
+.rightForm_70{float:left;width:70%;}
+.rightForm_80{float:left;width:80%;}
+
+#filePicker{position: absolute;left:8px;top:2px;width:54px;height:28px;border-radius:50%;overflow: hidden;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
+.webuploader-pick{width:100%;height:100%;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}

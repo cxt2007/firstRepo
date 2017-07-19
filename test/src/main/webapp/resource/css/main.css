@@ -1,0 +1,2110 @@
+.hidden{
+	display:none !important;
+}
+.red{
+	color:#fe3304;
+}
+.marTopNone{
+	margin-top:0 !important;
+}
+.marTopBot{
+	margin-bottom:0 !important;
+}
+.fn-left{
+	float:left;
+}
+.fn-right{
+	float:right;
+}
+.posRel{
+	position:relative;
+}
+.posAbs{
+	position:absolute;
+}
+h3{
+	font:bold 14px 'microsoft yahei';
+	color:#666666;
+}
+.line{
+	width:100%;
+	height:5px;
+	background-color:#f08519;
+}
+.commonTxt{
+	height: 30px;
+	line-height:30px;
+	border: 1px solid #cccccc;
+	text-indent:10px;
+}
+.commonDate{	
+	background:#fff url(../images/index/calendar.png) no-repeat right center;
+}
+.commonTxtarea{
+	text-indent:10px;
+}
+/* header */
+.header{
+	padding:0 25px;
+	height:87px;
+	position:relative;	
+}
+.menuLogo,.menuLogo a{
+	width:308px;
+	height:100%;
+}
+.menuLogo{	
+	background:url(../images/workbench/update/logo.png) no-repeat left center;
+}
+.menuLogo a{
+	display:inline-block;
+	text-indent:-999em;
+}
+.userCont{
+	position:absolute;
+	right:2%;
+	bottom:50%;	
+}
+.userCont li,.userCont li a{
+	float:left;	
+	position: relative;
+	z-index: 10;
+	font:12px "simHei";
+}
+.userCont li a{	
+	height:20px;
+	padding:0 0 0 25px;
+	margin:0 0 0 18px;
+	line-height:20px;
+	color:#666;
+	box-sizing:border-box;
+	background:url(../images/index/user.png) no-repeat 3px 5px;
+}
+.userCont li a i{
+	margin:0 0 0 5px;
+}
+.userCont li .message{
+	background-position:3px -34px;
+	padding-right:10px;
+}
+.userCont li a:hover{
+	color:#0099cc;
+}
+.header .topUserInfo{
+	position:absolute;
+	right:2%;
+	bottom:7px;
+}
+.header .topUserInfo span{
+	font:bold 12px/30px "simHei";
+}
+
+
+/*** 
+*顶部调整by cui
+***/
+.ui-layout-north .userCont a{
+	background: url(../images/workbench/update/header_user.png) no-repeat;
+}
+.userCont li .userName{
+	background-position:0 0;
+}
+.userCont li .settingTigger{
+	background-position:0 -22px;
+}
+.userCont li .loginOut{
+	background-position:0 -48px;
+}
+
+
+
+/* navBox */
+.navBox{
+	height:11px;
+	width:100%;
+	text-align: center; 
+	background-color: #f08300; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f08300', endColorstr='#f39800'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f08300), to(#f39800)); 
+	background-image: -webkit-linear-gradient(top, #f08300, #f39800); 
+	background-image: -moz-linear-gradient(top, #f08300, #f39800); 
+	background-image: -ms-linear-gradient(top, #f08300, #f39800); 
+	background-image: -o-linear-gradient(top, #f08300, #f39800); 
+	background-image: linear-gradient(top, #f08300, #f39800); 
+}
+.nav{
+	width:1000px;
+	margin:0 auto;
+}
+.nav li,.nav li a{
+	float:left;
+}
+.nav li a{
+	width:126px;
+	font:16px/48px "microsoft yahei";
+	text-align:center;
+	color:#fff;
+}
+.nav li a:hover,.nav .current a{
+	background-color: #438513;
+	transition: background-color .2s linear;
+	-webkit-transition: background-color .2s linear;
+	-moz-transition: background-color .2s linear;
+	-o-transition: background-color .2s linear
+}
+/* leftMenu */
+.leftMenu .item{
+	width:100%;
+	min-height:40px;
+	height:auto !important; 
+	height:40px; 
+	overflow:visible;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #f3f3f3; 
+}
+.leftMenu .item li{
+	height:40px;
+}
+.leftMenu .item li a,.leftMenu .item h3 a{
+	height:40px;
+	width: 100%;
+	color: #888888;
+	text-indent:25px;
+	border-left:2px solid transparents;
+	display:inline-block;
+	font:14px/40px 'microsoft yahei';	
+}
+.leftMenu .item h3 a,.leftTitle a{
+	color: #333333;
+	font-weight:bold;	
+	text-indent:25px;
+}
+.leftMenu .item li a:hover,.leftMenu .item li a.cur{
+	color: #e87e00;
+	text-decoration:none;	
+	background-color:#f3f3f3;
+	border-left:2px solid #e87e00;
+}
+.leftMenu .item h3 a:hover,.leftTitle a:hover,.leftMenu .item h3.uiMenuCur a{
+	color: #e87e00;
+}
+.leftMenu .item h3 .hasChild {
+	background:url(../images/workbench/update/left_all.png) 95% center no-repeat;
+}
+.leftMenu .item h3.uiMenuCur,.leftMenu .item .uiContBase{
+	background:#f7f8f8;
+}
+.leftMenu .item h3.uiMenuCur .hasChild{
+	background:url(../images/workbench/update/left_down.png) 95% center no-repeat;
+}
+
+
+/*index*/
+.bannerBox{
+	width:874px;
+	height:167px;
+	overflow:hidden;
+	z-index:5;
+}
+.banner{
+	z-index:10;
+}
+.banner li{
+	display:none;
+}
+.banner .current{
+	display:block;
+}
+.bannerControl{
+	width:60px;
+	right:10px;
+	bottom:7px;
+	z-index:15;
+}
+.bannerControl li,.bannerControl li a{
+	float:left;
+	width:16px;
+	height:16px;
+}
+.bannerControl li{
+	padding:0 0 0 4px;	
+}
+.bannerControl li a{
+	font:12px/16px "";
+	color:#fff;
+	text-align:center;
+	background:url(../images/index/bannerController.png) 0 0 no-repeat;	
+}
+.bannerControl li a:hover,.bannerControl .current a{
+	background-position:0 bottom;
+}
+.mode{
+	height:166px;
+	padding:16px 0 0;
+}
+.summary{
+	width:233px;
+	height:166px;
+	background:url(../images/index/new.png) no-repeat 0 0;
+	position:relative;
+}
+.unassignedOrders .summary{
+	background:url(../images/index/wait.png) no-repeat 0 0;
+}
+.todayOrders .summary{
+	background:url(../images/index/today.png) no-repeat 0 0;
+}
+.summary a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.summary h3{
+	text-align:center;
+	width: 100%;
+	padding:20px 0;
+}
+.summary h3 span{
+	font:bold 14px '';
+	color:#e87e00;
+	margin:0 5px 0 0;
+}
+.summary .sumCon{
+	padding:0;
+	position:absolute;
+	left:0;
+	bottom:15px;
+}
+.description{
+	width:638px;
+	height:160px;
+	border:3px solid #cbebeb;
+	border-left:none;
+}
+.unassignedOrders .description{
+	border-color:#ffedd2;
+}
+.todayOrders .description{
+	border-color:#e5dbff;
+}
+.description ul,.description li,.description ul,.description li a,.description li a span{
+	float:left;
+}
+.description li span{	
+	width:115px;
+	padding:0 0 0 15px;
+	font:12px/30px '';
+	color:#666;
+}
+.description .orderId{	
+	padding-right:150px;	
+}
+.unassignedOrders .description .orderId{
+	padding-left:40px;
+	padding-right:125px;
+	background:url(../images/index/newVolunteer.png) no-repeat 14px center;
+}
+.newOrders .description .orderId{
+	color:#0099cc;
+}
+.description .name{
+	height:30px;
+	width:115px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-right:140px;
+	color:#e87e00;
+}
+.description .time{
+	width:60px;	
+	color:#999;
+}
+.description .inner{
+	width:115px;
+	height:145px;
+	margin:15px 118px 0 15px;
+	display:inline;
+	text-align: center;
+	background:url(../images/index/breakfast.png) no-repeat right bottom;
+}
+.description .inner a{
+	float:left;
+	width: 100%;
+}
+.description .lunch{
+	background:url(../images/index/lunch.png) no-repeat center bottom;
+}
+.description .dinner{
+	margin-right:0;
+	background:url(../images/index/dinner.png) no-repeat center bottom;
+}
+.description .inner p{
+	margin-top:35px;
+}
+/*fileUpload 创建活动*/
+.fileUpload .companyLogos{
+	height:98px;
+	padding:9px;
+	background:#f8f8f8;
+	border:1px dashed #e3e3e3;
+}
+.fileUpload .companyLogos .custom-queue,.fileUpload  .custom-queue{
+	float:left;		
+	height:88px;
+	margin:0 7px 0 0;
+	padding:4px;
+	border:1px solid #ccc;		
+	overflow:hidden;	
+}
+.fileUpload .imgBox{
+	float:left;	
+	width:88px;
+	height:88px;
+	overflow:hidden;
+	margin-right:5px;
+	position:relative;
+}
+.fileUpload .imgBox .delete{
+	display:inline-block;
+	width:7px;
+	height:8px;
+	background:url(../js/external/uploadify/cancel.png) no-repeat right bottom;	
+	position:absolute;
+	right:5px;
+	top:5px;
+	cursor:pointer;
+}
+.fileUpload .companyLogos .custom-queue .saveimg,.fileUpload .custom-queue .saveimg{	
+	width:88px;
+	height:88px;
+}
+.fileUpload .files object,.files object{
+	float:left;
+	width:100px;
+	height:35px;
+	margin:34px 0 0;
+}
+.serviceAddUpload .filesBox object{
+	width:100px;
+	height:35px;
+}
+.themeLogos object{
+	clear:both;
+}
+.fileUpload .files .fileTip,.files .fileTip{
+	color:#ff0000;
+	left: 258px;
+}
+.fileUpload .companyLogos .fileTip,.files .fileTip{
+	top: 53px;
+}
+.fileUpload .uploadifyQueueItem,.fileUpload .certificate .custom-queue{
+	display:none;
+}
+.serviceAddUpload .companyLogos{
+	height:auto;
+	padding:0;
+	background:#fff;
+	border:none;
+}
+.serviceAddUpload .companyLogos .custom-queue{
+	float:none;		
+}
+.serviceAddUpload .files object,.files object{	
+	margin:5px 0 0;
+}
+.serviceAddUpload .files .fileTip,.files .fileTip {
+	left: 110px;
+}
+.serviceAddUpload .companyLogos .fileTip,.files .fileTip {
+	top: 105px;
+}
+/*summaryLoad*/
+.summaryLoad .saveimg{
+	float:left;
+}
+.summaryLoad .companyLogos .custom-queue{
+	margin:0;
+}
+/*fileUpload*/
+
+/* 404 */
+.notFoundBody{
+	width:100%;
+	height:100%;
+	background:#efefef;
+}
+.notFound{
+	width:100%;
+	height:100%;
+	background:#efefef;
+}	
+.notFound .notFoundCont{
+	width:1127px;
+	height:782px;
+	margin: 0 auto;
+	position:relative;
+	background:#efefef url(../images/error/404_bg.jpg) center center no-repeat;
+}
+.notFound .notFoundCont h1{
+	width:483px;
+	height:137px;
+	position:absolute;
+	text-indent:-999em;
+	top: 38%;
+	left: 37%;
+	background:url(../images/error/404.png) no-repeat;
+}
+.notFound .notFoundCont .serverError{
+	background:url(../images/error/500.png) no-repeat;
+}
+.notFound .notFoundCont a{
+	display:inline-block;
+	width:113px;
+	height:37px;
+	text-indent:-999em;
+	position:absolute;
+	left: 66%;
+	top: 62%;
+	background:url(../images/error/404_btn.png) no-repeat;
+}
+
+/* time style */
+.dateTime{
+	background:#fff url(../images/order/canlendar.png) 95% center no-repeat;
+}
+#time{
+	display:block;
+	margin:10px;	
+}
+/* setting */
+.ui-dialog #setDialog{
+	padding: .5em 5px;
+}
+.updatePwd{
+	min-height:35px;
+	cursor: pointer;
+}
+.updatePwd .form-lbl{
+	font-family:'microsoft yahei';
+}
+.updatePwd .container_24 input{
+	width:254px;
+	height:32px;
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+.updatePwd .container_24 input:hover{
+	border:1px solid #ffc683;
+	box-shadow:0 0 5px #ffc683;
+	background-color:#fff9f1;
+}
+.updatePwd .form-req {
+	color:#db1212;
+	padding:0;
+	font-family:'microsoft yahei';
+	vertical-align: middle;
+}
+.updatePwd .grid_1,.updatePwd .grid_3,.updatePwd .grid_20,.updatePwd .grid_21,.updatePwd .grid_22{
+	height: 22px;
+	line-height: 25px;
+}
+.updatePwd .grid_20{
+	margin-bottom:3px;
+}
+.ui-dialog .ui-dialog-buttonpane{
+	margin:0;
+	padding: 1.3em 0 1.5em 0;
+}
+.redTit{
+	color:#db1212;
+}
+.customerInfo .packageCont table .noContent,.bought-table tbody .noContent,.noContent{
+	text-align:center;
+	height:165px;
+}
+.customerInfo .packageCont table .noContent:hover,.bought-table tbody .noContent:hover,.noContent:hover{
+	background:none;
+}
+.customerInfo .packageCont table .noContent td,.bought-table tbody .noContent td,.noContent span{
+	width:100%;
+	height:52px;
+	color:#555555;
+	border:none;
+	vertical-align: middle;
+	text-align: center;
+	font:12px/52px 'microsoft yahei';
+	background:url(../images/noTit.png) 40% center no-repeat;
+}
+.description .noContent span{
+	display:inline-block;
+}
+.orderNoCont{
+	line-height:165px;
+	width: 638px;
+}
+.description .orderNoCont span{
+	width:100%;
+	text-align:center;
+	box-sizing: border-box;
+	text-indent: 210px;
+	line-height: 55px;
+}
+
+.ui-dialog #orderSetForm{
+	padding: .5em 5px;
+}
+.orderSettlement .amountInput{
+	width:80px;
+	height:33px;
+	border:1px solid #ccc;
+	font:18px 'microsoft yahei';	
+}
+.orderSettlement .form-lbl em{
+	color:#005ea7;
+	font:24px 'microsoft yahei';
+}
+.orderSettlement .form-lbl span{
+	color:#db1212;
+	font:18px 'microsoft yahei';
+}
+/*服务安排*/
+.serviceArrange{
+	
+}
+.serviceArrange li,.serviceArrange li a{
+	float:left;
+}
+.serviceArrange li a{	
+	width:234px;
+	height:128px;
+	padding:10px 15px;
+	margin:10px 37px 22px 0;
+	background:#fff;
+	border:1px solid #ccc;	
+	overflow:hidden;
+}
+.serviceArrange li a:hover{	
+	background:#fff9e6;
+	border-color:#eed97c;	
+}
+.serviceArrange .marginNone a{
+	margin-right:0;
+}
+.serviceArrange li dt h3{
+	font:bold 12px/36px "";
+	padding-left:22px;
+	background:url(../images/serviceMan.png) no-repeat 0 center;
+}
+.serviceArrange li dd{
+	color:#666;
+	line-height:34px;
+}
+.serviceArrange li dd span{
+	display:inline-block;
+	width:64px;	
+}
+.serviceArrange li dd .phone{	
+	width:95px;	
+}
+.serviceArrange li dd span em{
+	color:#ef8214;
+	font-style:normal;
+}
+/* 服务对象   */
+.customerInfo .packageCont{
+	margin:10px 0 0;
+}
+.customerInfo .packageCont table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+.customerInfo .packageCont table tbody tr {
+	background-color:#fff;
+}
+.customerInfo .packageCont table tbody tr:hover,.customerInfo .packageCont table tbody tr.checked,.customerInfo .packageCont table tbody tr:hover input,.customerInfo .packageCont table tbody tr.checked input{
+	background-color:#eaf8ff;
+}
+.customerInfo .packageCont table tbody tr:hover input{
+	background-color:#fff;
+}
+.customerInfo .packageCont table tbody .newTr input{
+	border:none;
+	text-align: center;
+}
+.customerInfo .packageCont table tbody .newTr .hasBorder{
+	border: 1px solid #cccccc;
+}
+.customerInfo .packageCont table th{
+	height:32px;
+	font:12px/32px '';
+	background-color:#E2E2E2;
+	/*border-bottom:1px solid #e8e8e8;*/
+}
+.customerInfo .packageCont table tbody td{
+	height:35px;	
+	color:#555555;
+	vertical-align:middle;
+	border-bottom:1px solid #e8e8e8;
+}
+.customerInfo .packageCont table tbody td td{
+	padding:5px 0 0;
+}
+.customerInfo .packageCont table td a{
+	color:#005ea7;
+}
+.customerInfo .packageCont table td a:hover{
+	text-decoration:underline;
+}
+.customerInfo .packageManageUse table th,.customerInfo .packageManageUse table td{
+	text-align:center;
+	text-indent: 0;
+}
+
+.bookOrderCont .packageCont table th,.bookOrderCont .packageCont table tbody td{
+	text-align:center;
+}
+.bookOrderCont .tabTit{
+	height:41px;
+	margin-top:8px;
+	background-color:#fafafa;
+	/*border-bottom:1px solid #e8e8e8;*/
+}
+.bookOrderCont .tabTit a{
+	display:inline-block;
+	width:90px;
+	color:#005ea7;
+	font:14px 'microsoft yahei';
+	text-align:center;
+}
+.bookOrderCont .tabTit a.on{
+	height:40px;
+	color:#e87e00;
+	line-height:40px;
+	border:1px solid #e8e8e8;
+	border-top:2px solid #e87e00;
+	border-bottom:0;
+	background-color:#fff;
+	margin-left:-1px;
+}
+.bookOrderCont .packageCont{
+	margin-top:10px;
+}
+.bookOrderCont .packageCont td a{
+	color:#005ea7;
+}
+.bookOrderCont .packageCont table th{
+	color:#666666;
+	font-weight:bold;
+}
+.bookOrderCont .packageCont td a:hover{
+	text-decoration:underline;
+}
+.bookOrderCont .packageCont table td em{
+	padding-right:15px;
+}
+.bookOrderCont .packageCont table td em i{
+	color:#ff0000;
+}
+.bookOrderCont .packageCont tfoot td a:hover{
+	text-decoration:none;
+}
+
+.funArea{
+	font:12px/26px 'microsoft yahei'; 
+  	color: #666;
+}
+.funArea .marLeft50{
+	margin-left:50px;
+}
+.funArea li{
+	float:left;
+	width:100%;
+	padding:5px 0;
+}
+.funArea input, .funArea select {
+	height:26px;
+	font:12px/26px 'microsoft yahei';
+	border: 1px solid #ccc;
+	padding: 0 10px 0 0;
+	vertical-align: middle;
+	background-color: #fff;
+	color: #666;
+}
+.funArea input{
+	width:68px;
+}
+.funArea select{
+	width:100px;
+	margin-right:5px;
+}
+.funArea label{
+	display:inline-block;
+	width:60px;
+}
+.funArea .nameBox label{
+	width:40px;
+}
+.funArea .nameBox input{
+	width:100px;
+}
+.ui-layout-center .commonView .businessBtn{
+	width:50px;
+	height:26px;
+	margin:0 0 0 15px;
+	color:#666;
+	text-align:center;
+	display:inline-block;
+	margin-right:3px; 	
+	cursor:pointer;
+	text-indent:0;
+	font:12px/28px 'microsoft yahei';
+	vertical-align:middle;
+	border:1px solid #cecece;
+	background-color: #e7e7e7; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e7e7e7'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#e7e7e7)); 
+	background-image: -webkit-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -moz-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -ms-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -o-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: linear-gradient(top, #eeeeee, #e7e7e7); 
+}
+.ui-layout-center .commonView input.businessBtn{
+	min-width:50px; 
+	width:auto !important; 
+	width:50px; 
+}
+.commonView .businessBtn:hover,.commonView .businessBtn.current{
+	background-color: #d5d5d5; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#d5d5d5'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d5d5d5)); 
+	background-image: -webkit-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -moz-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -ms-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -o-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: linear-gradient(top, #efefef, #d5d5d5); 
+}
+/*end of 服务对象*/
+/*新增志愿者*/
+
+.week label{
+	margin-right:5px;
+}
+
+/*end of 新增志愿者*/
+/* add page style */
+.searchBar {
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.searchBar h2 {
+	height: 30px;
+	float: left;
+	text-indent: 8px;
+	font: bold 16px/30px 'microsoft yahei';
+	overflow: hidden;
+}
+.searchBar h2 i {
+	width: 3px;
+	height: 16px;
+	float: left;
+	margin: 6px 0 0 0;
+	display: inline-block;
+	background-color: #e87e00;
+}
+.addFormCont{
+	margin-top:5px;
+}
+.addFormCont .zTable {
+	width: 99%;
+	margin-bottom:12px;
+	border-collapse: collapse;
+}
+.addFormCont .zTable input[type="text"],.addFormCont .zTable textarea,.addFormCont .zTable select{
+	width: 99%;
+	height: 28px;
+	margin-top: 6px;
+	border: 1px solid #cccccc;
+	background-color: #f9f9f9;
+	box-sizing:border-box;
+}
+.addFormCont .btnTable input[type="text"]{
+	width: 60%;
+}
+.commonView .addFormCont .btnTable span{
+	display:inline-block;
+	width:60%;
+	height: 26px;
+    margin-top: 6px;
+    border: 1px solid #fff;
+}
+.addFormCont .zTable textarea {
+	width: 99%;
+	color: #333333;
+	font: 12px 'microsoft yahei';
+	line-height: 1.5em;
+	padding: 10px 2px;
+	min-height: 100px;
+}
+.addFormCont .zTable input[type="checkbox"]{
+	vertical-align:middle;
+}
+.addFormCont .zTable .eventLocation select{
+	width:30%;
+	margin-right:1%;
+}
+.equipmentFormCont .zTable .eventLocation .addressDistrict,.equipmentFormCont .zTable .eventLocation .addressStreet{
+	width:120px;	
+}
+.equipmentFormCont .zTable .eventLocation .community{
+	width:160px;	
+}
+.addFormCont .zTable .eventLocation input[type="text"]{
+	width:35.5%;
+}
+.addFormCont .zTable input.dateTime{
+	width:30%;
+}
+.dateTime {
+	background: #fff url(../images/canlendar.png) 95% center no-repeat;
+}
+/* btn */
+.submitBtn {
+	width: 100%;
+	margin-top: 16px;
+	text-align: center;
+}
+.ui-layout-center .commonView .commonServiceBtn,.ui-layout-center .commonView .downloadBtn{
+	background:url(../images/btn_bg.png) no-repeat;
+}
+.ui-layout-center .commonView .commonServiceBtn,.ui-layout-center .commonView .downloadBtn
+,#peopleCommonView .commonServiceBtn{
+	width:69px;
+	height:28px;
+	color:#fff;
+	text-align:center;
+	display:inline-block;
+	cursor:pointer;
+	text-indent:0;
+	border:0 none;
+	font:12px/29px 'microsoft yahei';
+	vertical-align:middle;
+	background-position: 0 0;
+}
+.ui-layout-center .commonView .erweimBtn{
+	width:89px;
+	background-position: 0 -121px;
+}
+.ui-layout-center .commonView .commonServiceBtn{
+	height:30px;
+}
+.ui-layout-center .commonView .downloadBtn{
+	width:89px;
+}
+.ui-layout-center .commonView .commonServiceBtn:hover{
+	background-position: 0 -30px;
+}
+.ui-layout-center .commonView .downloadBtn{
+	background-position: 0 -61px;
+}
+.ui-layout-center .commonView .downloadBtn:hover{
+	background-position: 0 -91px;
+}
+.ui-layout-center .commonView .erweimBtn:hover{
+	background-position: 0 -151px;
+}
+.ui-layout-center .commonView .lotAddBtn{
+	width:90px;
+	background-position: 0 -121px;
+}
+.ui-layout-center .commonView .lotAddBtn:hover{
+	background-position: 0 -151px;
+}
+/* active list */
+.searchBar{
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+}
+.searchBar img{
+	margin-right:10px;
+}
+.searchBar img.people{
+	margin-left:46px;
+}
+.searchBar h2{
+	height:30px;
+	float:left;
+	text-indent:8px;
+	font:bold 14px/30px 'microsoft yahei';
+	overflow:hidden;
+}
+.searchBar h2 i{
+	width:3px;
+	height:16px;
+	float:left;
+	margin:6px 0 0 0;
+	display:inline-block;
+	background-color:#e87e00;
+}
+.searchBar .search{
+	height:30px;
+	font-family: "microsoft yahei";
+}
+.searchBar .search input{
+	width:221px;
+	line-height:25px;
+	text-indent:25px;
+	border-right:none;
+	font-family: "microsoft yahei";
+	background:url(../images/active/icon_search.jpg) 5px 5px no-repeat;
+	border:1px solid #ccc;
+}
+.searchBar .search .search-btn{
+	display: inline-block;
+	width:50px;
+	height:28px;
+	margin:-4px 0 0 -4px;
+	text-align: center;
+	vertical-align: middle;
+	background: #f6f6f6;
+	border:1px solid #e8e8e8;
+	cursor: pointer;
+}
+.searchBar .search .search-btn button{
+	cursor:pointer;
+	border:0 none;
+	background:none;
+	color:#333333;
+	font:12px/28px 'microsoft yahei';
+}
+/*list table style */
+
+.listContent .tableMod{
+	margin-top:10px;
+}
+.listContent .tableMod table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+.listContent .tableMod table tbody tr {
+	text-indent:30px;
+	background-color:#fff;
+}
+.listContent .tableMod table tbody tr:hover,
+.listContent .tableMod table tbody tr.checked,
+.listContent .tableMod table tbody tr:hover input,
+.listContent .tableMod table tbody tr.checked input{
+	background-color:#eaf8ff;
+}
+.customerInfo .tableMod table tbody tr:hover input{
+	background-color:#fff;
+}
+listContento .tableMod table tbody .newTr input{
+	border:none;
+	text-align: center;
+}
+.listContent .tableMod table tbody .newTr .hasBorder{
+	border: 1px solid #cccccc;
+}
+.listContent .tableMod table th{
+	height:40px;
+	text-align: center;
+	font:16px/40px 'Microsoft Yahei';
+	background-color:#eeeeee;
+	border-bottom:1px solid #e8e8e8;
+	font-weight: bolder;
+}
+.listContent .tableMod table tbody td{
+	height:55px;	
+	color:#555555;
+	text-indent:0;
+	vertical-align:middle;
+	border-bottom:1px solid #e8e8e8;
+}
+.listContent .tableMod table th, .listContent .tableMod table tbody td {
+	text-align: center;
+}
+.listContent .tableMod table tbody td td{
+	padding:5px 0 0;
+}
+.listContent .tableMod table td a{
+	color:#005ea7;
+	font:14px/40px 'Microsoft Yahei';
+}
+.tableMod table td.listBtn a {
+	margin:0 5px;
+}
+.customerInfo .tableMod table td a:hover{
+	text-decoration:underline;
+}
+.listContent .tableMod .theme, .textOverflow{
+	width:90%;
+	overflow:hidden;
+	white-space:nowrap;
+	float: left;
+	text-overflow:ellipsis;
+	display:inline-block;
+}
+
+
+/* page */
+table .sep-row {
+	height: 10px;
+}
+.toolbar-bottom{
+	height: 22px;
+}
+.toolbar td {
+	border: none;
+}
+.paging-full {
+	position: relative;
+	height: 37px;	
+	display: inline;
+	float: right;
+}
+.paging-full .items {
+	display: inline;
+	float: left;
+}
+.paging-full .item {
+	position: relative;
+	display: inline;
+	float: left;
+	width:32px;
+	height: 24px;
+	color: #666;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 5px;
+	border-radius: 3px;
+	font:12px/26px '';
+	background-color:#f5f5f5;
+	border: 1px solid #dddddd;
+}
+.paging-full .item .num {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	color:#666;
+	margin-top:-7px;
+}
+.paging-full .item.active,.paging-full .item:hover,.paging-full .item.active:hover{
+	border:0 none;
+	color:#e87e00;
+	font-weight:bold;
+	background-color:#fff;
+}
+.paging-full .item:hover{
+	font-weight:normal;
+	background-color:#f5f5f5;
+	border: 1px solid #dddddd;
+}
+.paging-full .icon {
+	display: inline-block;
+	width: 7px;
+	height:12px;
+	overflow: hidden;
+	background: url(../images/active/icon_page.png) no-repeat 0 0;
+	position: absolute;
+	left: 7%;
+	top: 30%;
+}
+.paging-full .next, .paging-full .prev {
+	width:70px;
+	cursor: pointer;
+}
+.paging-full .next .icon{
+	left: 84%;
+	background-position:-8px 0;
+}
+.paging-full .dot {
+	border: none;
+	line-height: 37px;
+	cursor: default;
+}
+.paging-full .dot:hover{
+	border:none;
+	background:none;
+}
+.paging-full .m-more,.paging-full .total, .paging-full .form {
+	float: left;
+	line-height: 28px;
+}
+.paging-full .total{
+	margin-right:15px;
+}
+.paging-full .form .input {
+	width:32px;
+	border: 1px solid #dddddd;
+	height: 22px;
+	font:12px/26px '';
+	text-align: center;
+	border-radius: 3px;
+	text-indent:0;
+	vertical-align: top;
+	background-color: #ffffff; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff)); 
+	background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); 
+	background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); 
+	background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); 
+	background-image: -o-linear-gradient(top, #eeeeee, #ffffff); 
+	background-image: linear-gradient(top, #eeeeee, #ffffff); 
+}
+.paging-full .form .button{
+	height: 28px;
+	width: 37px;
+	vertical-align: top;
+	color: #666;
+	text-align: center;
+	line-height: 27px;
+	cursor: pointer;
+	border:0 none;
+	text-indent:0;
+	display:inline-block;
+	font-size:12px;
+	margin:-1px 0 0;
+	background:url(../images/active/icon_btn.png) 0 0 no-repeat;
+}
+.paging-full .form .disabled{
+	color:#ccc;
+	background-position:0 bottom !important;
+}
+.paging-full .form .button:hover{
+	background-position:0 -28px;
+}
+/* detail page style */
+.activeDetailUl li h3{
+	color:#666;
+	width: 75px;
+	text-align: right;
+	font:bold 12px/45px '';
+	display:inline-block;
+}
+.activeDetailUl .number{
+	font-size:18px;
+	color:#ee7903;
+}
+.activeDetailUl li span{
+	padding-left:14px;
+}
+.activeDetailUl li span img{
+	display:inline-block;
+	width:260px;
+	height:130px;
+	padding:0 5px 5px 0;
+}
+.activeDetailUl .uploadfile span img{
+	float:left;
+}
+.activeDetailUl .uploadfile span{
+	width:795px;
+	padding:0;
+}
+.descriptionLi h3{
+	float:left;
+}
+.activeDetailUl .descriptionLi .activeDescription{
+	float:left;
+	padding-left:14px;
+	margin-top:10px;
+	display:inline-block;
+}
+.descriptionLi .activeDescription p{
+	line-height:26px;
+}
+.activeDetailUl .participants  h3,.participants .participantsCont{
+	float:left;
+}
+.participants .participantsCont{
+	width:80%;
+	padding:18px 0 0 14px;
+}
+.participants .participantsCont .wordBreak{
+	width:80%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.activeDescription a{
+	display:inline-block;
+	color:#005ea7;
+	margin-top:10px;
+}
+.activeDescription a:hover{
+	text-decoration:underline;
+}
+.activeDescription .descriptionMod{
+	height:150px;
+	overflow:hidden;
+}
+/* 活动总结  */
+.activeSummary{
+	margin:10px 0 0;
+}
+.activeSummary textarea{
+	width:100%;
+	border:1px solid #ccc;
+	-moz-box-shadow:-2px 5px 5px #f6f6f6 inset;             
+	-webkit-box-shadow:-2px 5px 5px #f6f6f6 inset;          
+	box-shadow:-2px 5px 5px #f6f6f6 inset;  
+	min-height:75px;
+	box-sizing:border-box;
+}
+.activeSummary .activeSummaryBtn{
+	text-align:right;
+	margin-top:10px;
+}
+.activeSummaryBtn .insertPicture{
+	width:90px;
+	height:26px;
+	color:#fff;
+	margin-right:8px;
+	text-indent:18px;
+	vertical-align:middle;
+	font:12px 'Microsoft Yahei';
+	background-color:#5a79b5;
+	background-image: url(../images/active/insertImg.png);
+	background-position:8px center;
+	background-repeat: no-repeat;
+	border:1px solid #465d89;
+}
+.activeSummaryBtn .insertPicture:hover{
+	background-color:#6f9cf3;
+	border:1px solid #5a79b5;
+}
+/* but样式   */
+.ui-layout-center .commonView .businessBtn{
+	width:50px;
+	height:26px;
+	color:#666;
+	text-align:center;
+	display:inline-block;
+	cursor:pointer;
+	text-indent:0;
+	font:12px 'microsoft yahei';
+	vertical-align:middle;
+	border:1px solid #cecece;
+	background-color: #e7e7e7; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e7e7e7'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#e7e7e7)); 
+	background-image: -webkit-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -moz-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -ms-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: -o-linear-gradient(top, #eeeeee, #e7e7e7); 
+	background-image: linear-gradient(top, #eeeeee, #e7e7e7); 
+}
+.commonView .businessBtn:hover,.commonView .businessBtn.current{
+	background-color: #d5d5d5; 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#d5d5d5'); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d5d5d5)); 
+	background-image: -webkit-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -moz-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -ms-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: -o-linear-gradient(top, #efefef, #d5d5d5); 
+	background-image: linear-gradient(top, #efefef, #d5d5d5); 
+}
+
+/* 志愿者详情   */
+.packageMangeUse{
+	overflow:hidden;
+}
+.customerInfo .txt,.customerInfo .cont .name,.customerInfo .cont .gender,.customerInfo .cont .age,
+.customerInfo .cont .telephone,.customerInfo .cont .adress,.customerInfo .cont .IDs,.customerInfo .cont .ids{
+	background:url(../images/member/small_icon.png) no-repeat;
+}
+.packageMangeUse .customerInfo,.boxComStyle{
+	margin-top:15px;
+}
+.packageMangeUse .customerInfo .txt,.boxComStyle .txt{
+	color:#666;
+	height:16px;
+	text-indent: 22px;
+	font:14px/16px 'Microsoft Yahei';
+	background-position:0 0;
+	margin-bottom:18px;
+}
+.packageMangeUse .customerInfo .cont,.boxComStyle .cont{
+	border:1px dashed #e3e3e3;
+	background-color:#f5f5f5;
+	width:100%;
+	height:auto !important; 
+	height:100px; 
+	overflow:visible;
+	box-sizing:border-box;
+}
+.packageMangeUse .customerInfo ul,.boxComStyle ul{
+	overflow:hidden;
+	padding:4px 12px;
+}
+.packageMangeUse .customerInfo ul li,.boxComStyle ul li{
+	float:left;
+	width:50%;
+	word-wrap: break-word;
+	font:12px/30px 'microsoft yahei';
+}
+.packageMangeUse .customerInfo ul li .width100,{
+	width:100%;
+}
+.packageMangeUse .customerInfo ul .width100,.boxComStyle ul .width100{
+	width:100%;
+}
+.packageMangeUse .customerInfo ul .width100 input,.boxComStyle ul .width100 input{
+	width:558px;
+}
+.packageMangeUse .customerInfo li em,.boxComStyle li em{
+	display: inline-block;
+	width: 100px;
+	font-weight:bold;
+	padding-left:15px;
+}
+.volunteerInfo .customerInfo ul li{
+	width:30%;
+}
+.volunteerInfo .customerInfo li em{
+	width:auto;
+	display:inline;
+}
+.volunteerInfo .customerInfo li .orange{
+	color:#e17301;
+	padding-right:5px;
+}
+.volunteerInfo .customerInfo li .rankBadge{
+	background:url(../images/member/rating.png) no-repeat;	
+}
+.volunteerInfo .customerInfo .voServiceExp{
+	width:100%;
+}
+.volunteerInfo .customerInfo .voServiceExp em{
+	width:105px;
+}
+
+.customerInfo .cont i{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	vertical-align: middle;
+}
+.customerInfo .cont .name{
+	background-position:0 -26px;
+}
+.customerInfo .cont .gender{
+	background-position:0 -51px;
+}
+.customerInfo .cont .age{
+	background-position:0 -82px;
+}
+.customerInfo .cont .telephone{
+	background-position:0 -109px;
+}
+.customerInfo .cont .adress{
+	background-position:0 -138px;
+}
+.customerInfo .cont .IDs,.customerInfo .cont .ids{
+	background-position:0 -170px;
+}
+.serviceArrangements{
+	width:100%;
+	min-height:88px;
+	background-color:#fff9e6;
+	border:1px dashed #eed97c;
+	box-sizing:border-box;
+}
+.serviceArrangements .serviceArrCont,.serviceNoContent{
+	text-align:center;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.serviceArrangements .serviceArrCont span,.serviceNoContent span{
+	padding-right:25px;
+	vertical-align: middle;
+	display: inline-block;
+	height: 80px;
+	line-height:80px;
+}
+.serviceArrangements .serviceArrCont .serviceAddress{
+	width:200px;
+	white-space: nowrap;
+	display:inline-block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.serviceArrangements .serviceNoContent{
+	text-align:center;
+	display:none;
+	background:url(../images/member/noService.png) 29% center no-repeat;
+}
+.volunteersDetails .tabTit{
+	height:41px;
+	margin-top:8px;
+	background-color:#fafafa;
+	border-bottom:1px solid #e8e8e8;
+}
+.volunteersDetails .tabTit a{
+	display:inline-block;
+	width:90px;
+	color:#005ea7;
+	font:14px 'microsoft yahei';
+	text-align:center;
+}
+.volunteersDetails .tabTit a.on{
+	height:40px;
+	color:#e87e00;
+	line-height:40px;
+	border:1px solid #e8e8e8;
+	border-top:2px solid #e87e00;
+	border-bottom:0;
+	background-color:#fff;
+	margin-left:-1px;
+}
+.volunteersDetails .packageCont{
+	margin-top:10px;
+	display:none;
+}
+/* 列表无内容显示 */
+.customerInfo .packageCont table .noContent,.listContent .tableMod table tbody .noContent,.noContent{
+	text-align:center;
+	height:165px;
+}
+.customerInfo .packageCont table .noContent:hover,.listContent .tableMod table tbody .noContent:hover,.noContent:hover{
+	background:none;
+}
+.customerInfo .packageCont table .noContent td,.listContent .tableMod table tbody .noContent td,.noContent span{
+	width:100%;
+	height:52px;
+	color:#555555;
+	border:0 none;
+	vertical-align: middle;
+	text-align: center;
+	font:12px/52px 'microsoft yahei';
+	background:url(../images/noTit.png) 40% center no-repeat;
+}
+.description .noContent span{
+	display:inline-block;
+}
+.orderNoCont{
+	line-height:165px;
+	width: 638px;
+}
+.description .orderNoCont span{
+	width:100%;
+	text-align:center;
+	box-sizing: border-box;
+	text-indent: 210px;
+	line-height: 55px;
+}
+.volunteerServiceType .pointer{
+	display: inline-block;
+	width: 6px;
+	height: 10px;
+	cursor: pointer;
+	padding-right: 5px;
+	background: url(../images/member/icon_expand.png) 0 center no-repeat;
+}
+.volunteerServiceType .hold .pointer{
+	background: url(../images/member/icon_holding.png) 0 center no-repeat;
+}
+.volunteerServiceType .pointer span {
+	font: 14px/24px 'Microsoft Yahei';
+}
+.volunteerServiceType .childItem{
+	padding-left: 20px;
+	display:block;
+}
+
+/* 负责人、参与人弹框  */
+.participateList thead tr{
+	height: 32px;
+	background-color: #eeedee;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eeedee');
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eeedee));
+	background-image: -webkit-linear-gradient(top, #fafafa, #eeedee);
+	background-image: -moz-linear-gradient(top, #fafafa, #eeedee);
+	background-image: -ms-linear-gradient(top, #fafafa, #eeedee);
+	background-image: -o-linear-gradient(top, #fafafa, #eeedee);
+	background-image: linear-gradient(top, #fafafa, #eeedee);
+}
+.participateList #parForm >table{
+	border: 1px solid #e8e8e8;
+}
+.participateList table th{
+	height: 32px;
+	font: 12px/32px '';
+	border-bottom: 1px solid #e8e8e8;
+}
+.participateList .participantsCont{
+	height: 248px;
+	background: #fff;
+	overflow-y: auto;
+}
+.participateList .participantsCont table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+.participateList .participantsCont table tbody td {
+	height: 40px;
+	color: #555555;
+	vertical-align: middle;
+	border-bottom: 1px solid #e8e8e8;
+}
+#participateDialog{
+	padding:20px;
+}
+
+.ui-dialog .ui-dialog-content.ui-widget-content{
+	padding:20px 5px;
+}
+.ui-dialog .loginOutTxt.ui-dialog-content.ui-widget-content{
+	padding-top: 45px;
+}
+
+/* 实名认证  */
+.idCardImg a img{
+	width:48px;
+	height:28px;
+	margin-right:7px;
+	overflow:hidden;
+	border:1px solid #dcdcdc;
+}
+.refundReason textarea{
+	width: 95%;
+	height: 105px;
+	overflow: hidden;
+	line-height: 18px;
+}
+
+/* 首页广告位 */
+.advertisement{
+	
+}
+.advertisement object{
+	float:none;
+	height:36px;
+}
+.advertisement .uploadifyQueueItem{
+	display:none;
+}
+.advertisement .imgBox{
+	float:left;
+	width:276px;
+	height:164px;	
+	padding:3px;
+	margin:10px 5px 0 0;
+	border:1px solid #eee;
+	position:relative;
+}
+.advertisement .imgBox img{
+	display:block;
+	width:276px;
+	height:164px;	
+}
+.advertisement .imgDetail{
+	width:276px;
+	height:30px;
+	position:absolute;
+	left:3px;
+	bottom:3px;
+	background: url(../images/advertisement/imgDetail.png) repeat;
+}
+.imgDetail .imgControlers{
+	width:200px;
+	height:30px;
+	padding-left:70px;
+}
+.imgControlers .btn{
+	float:left;
+	width:19px;
+	height:30px;
+	margin:0 10px;
+	background: url(../images/advertisement/advertisementControlers.png) no-repeat 0 0;
+}
+.imgControlers .left{	
+	background-position: 0 8px;
+}
+.imgControlers .left:hover{	
+	background-position: 0 -22px;
+}
+.imgControlers .right{	
+	background-position: 0 -52px;
+}
+.imgControlers .right:hover{	
+	background-position: 0 -82px;
+}
+.imgControlers .del{	
+	background-position: 0 -112px;
+}
+.imgControlers .del:hover{	
+	background-position: 0 -142px;
+}
+.imgControlers .edit{	
+	background-position: 0 -174px;
+}
+.imgControlers .edit:hover{	
+	background-position: 0 -204px;
+}
+.imgControlers .release{	
+	background-position: 0 -238px;
+}
+.imgControlers .release:hover{	
+	background-position: 0 -269px;
+}
+.imgControlers .unrelease{	
+	background-position: 0 -306px;
+}
+.imgControlers .unrelease:hover{	
+	background-position: 0 -345px;
+}
+.imgDetail p{
+	color:#fff;
+    font: 12px/30px 'microsoft yahei';
+    text-indent:10px;
+}
+#content{
+	width:360px;
+	height:130px;
+	border: 1px solid #ccc;
+  	background-color: #fff;
+}
+#advertisementDialog .grid_20{
+	height:auto;
+}
+#advertisementDialog .container_24 input{
+	width:364px;
+}
+.addNewMessage .heightAuto{
+	height:auto!important;
+}
+.addNewMessage #acNum{
+	width:364px;
+}
+.addNewMessage .form-req{
+	line-height:28px;
+}
+#advertisementBox .noContent{
+	width: 170px;
+	height: 20px;
+	margin-left: -85px;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+}
+/*order 评价*/
+#evaluateOrderDialog,#orderMaintainDialog{
+	overflow: auto;
+}
+.commonDialog{
+	padding:0 35px;	
+}
+.commonDialog h3{
+	color:#333;
+}
+.commonDialog textarea{
+	width:455px;
+	height:200px;
+	border:1px solid #f0f0f0;
+}
+.commonDialog .form-lbl{
+	color:#666;
+}
+.commonDialog .form-lbl span{
+	display:inline-block;
+	width:50%;
+	text-align: right;
+}
+.xing{
+	padding:0 0 10px;
+}
+.xing li{
+	float:left;
+	width:22px;
+	height:21px;
+	margin:0 0 0 7px;
+	background:url(../images/icon_xing.png) no-repeat 0 0;
+	overflow:hidden;
+	cursor:pointer;
+}
+.xing .on{
+	background-position:0 bottom;
+}
+/*order 新增*/
+.commonDialog .specCon .form-lbl span{
+	width:100%;	
+}
+.commonDialog .specCon .form-req{
+	  line-height: 28px;
+}
+.commonDialog .container_24 input[type="text"] {	
+	height: 26px;
+	width: 230px;
+	border:1px solid #f0f0f0;
+}
+.commonDialog .specCon textarea{
+	width:575px;
+	height:70px;	
+}
+
+/* 版本  */
+.appVersionForm input,.appVersionForm select,.appVersionForm textarea{
+  width: 99%;
+  height: 28px;
+  color: #333;
+  margin-top: 6px;
+  font: 12px 'microsoft yahei';
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+.appVersionForm textarea{
+  line-height: 1.5em;
+  padding: 10px 2px;
+  min-height: 100px;
+}
+
+
+
+
+/* 针对google样式  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.searchBar h2{
+		text-indent: 12px;
+	}
+	.searchBar h2 i{
+		margin-top: 7px;
+	}
+	.paging-full .form .button{
+		height: 28px;
+	}
+}
+
+/*jxq*/
+.cardgrid_box{
+	padding:5px 15px;
+	background:#fafafa;
+	border:1px solid #f2f2f2;
+	width:auto;
+	margin:20px 0 40px;
+}
+.cardgrid_box div{
+	color:#666;
+}
+.cardgrid_box .grid_1,.cardgrid_box .grid_2{
+	width:auto;
+	/*padding:0 5px;*/
+}
+.cardgrid_box .w1{
+	float:right;
+	margin-bottom:-40px;
+}
+.carTabTable .tableTit{
+	background:#fafafa;
+	border-bottom:1px solid #f2f2f2;
+	height:32px;
+	margin-bottom:10px;
+}
+.carTabTable .tableTit li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	position:relative;
+	top:-1px;
+	cursor:pointer;
+	padding:0 20px;
+	line-height:32px;
+}
+.carTabTable .tableTit .on{
+	border-bottom:2px solid #e87e00;
+	color:#e87e00;
+	font-weight:bold;
+}
+.carTabTable .tableMod{
+	border:1px solid #f2f2f2;
+	display:none;
+}
+.carTabTable .tableMod thead th{
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	background:#fff;
+	font-weight:bold;
+}
+.carTabTable .tableMod tbody td{
+	height:34px;
+	line-height:34px;
+	text-align:center;
+}
+.carTabTable .tableMod tbody .normal{
+	color:#02cc99;
+}
+.carTabTable .tableMod tbody .abovenormal{
+	color:#9fd71b;
+}
+.carTabTable .tableMod tbody .flat{
+	color:#50bdea;
+}
+.carTabTable .tableMod tbody .mild{
+	color:#ffcc32;
+}
+.carTabTable .tableMod tbody .moderate{
+	color:#ff8e1d;
+}
+.carTabTable .tableMod tbody .serious{
+	color:#ff3300;
+}
+.ellipsis{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+}
+
+
+
+.process{
+	padding:0;
+}
+.process h3{
+	height:34px;
+	background:#fff9e6;	
+	border-bottom:1px solid #eed97c;
+}
+.process h3 span{
+	display:block;
+	height:35px;
+	width:90px;
+	color:#e87e00;
+	font:bold 14px/35px '';
+	text-align:center;
+	border-right:1px solid #eed97c;
+	background:#fff;	
+}
+.proCon{
+	padding:5px 0 5px 15px;
+}
+.proCon li,.proCon li span{
+	float:left;
+}
+.proCon li{
+	width: 100%;
+	line-height:28px;
+}
+.proCon li .proTime{
+	width:30%;
+}
+.proCon li .proMsg{
+	width:45%;
+}
+.proCon li .proPerson{
+	width: 25%;
+	float: right;
+}
+.proCon .proHead  span{
+	color:#000000;	
+}
+.proCon .proHead span{
+	font-weight:bold;
+}
+
+
+.process .txt {
+	background:url(../images/member/small_icon.png) no-repeat;
+}
+.packageMangeUse .process .txt {
+	background:url(../images/member/small_icon.png) no-repeat;
+}
+.packageMangeUse .process,.boxComStyle{
+	margin-top:15px;
+}
+.packageMangeUse .process .txt,.boxComStyle .txt{
+	color:#666;
+	height:16px;
+	text-indent: 22px;
+	font:14px/16px 'Microsoft Yahei';
+	background-position:0 0;
+	margin-bottom:18px;
+}
+.packageMangeUse .process .cont,.process .cont{
+	border:1px dashed #e3e3e3;
+	background-color:#f5f5f5;
+	width:100%;
+	height:auto !important; 
+	height:100px; 
+	overflow:visible;
+	box-sizing:border-box;
+}
+.packageMangeUse .process .cont .proCon ul .proHead li span{
+	display: inline-block;
+	width: 90px;
+	font-weight:bold;
+	padding-left:15px;
+}
+
+.searchBar .search input.dateTimeStyle{
+	  margin-top: 0;
+	  border-right: 1px solid #e8e8e8;
+}
+#queue_companyLogos img{
+	width:88px;
+	height:88px;
+	overflow:hidden;
+}
+#queue_companyLogos .cancel img{
+	width:8px;
+	height:8px;
+}
+#certificateImgs .delete{
+	margin-left:5px;
+	cursor:pointer;
+}
+
+/* 
+	新增补贴
+*/
+.serviceTipDialog{
+	display:none;
+	position:absolute;
+	left: -1px;
+  	top: 40px;
+  	width:510px;
+  	min-height:125px;
+  	overflow-y:auto;
+  	max-height:300px;
+  	*height:125px;
+  	border:1px solid #ddd;
+  	background:#fdfdfd;
+}
+.serviceTipDialog ul{
+    overflow: hidden;
+    padding: 4px 12px;
+}
+.serviceTipDialog ul li{
+	width:100%;
+	word-wrap: break-word;
+	font:12px/30px 'microsoft yahei';
+}
+
+
+/* 
+	商家
+*/
+.serviceTip{
+	display:none;
+	position:absolute;
+	left: 180px;
+  	top: 370px;
+  	width:510px;
+  	min-height:125px;
+  	overflow-y:auto;
+  	max-height:300px;
+  	*height:125px;
+  	border:1px solid #ddd;
+  	background:#fdfdfd;
+}
+.serviceTip ul{
+    overflow: hidden;
+    padding: 4px 12px;
+}
+.serviceTip ul li{
+	width:100%;
+	word-wrap: break-word;
+	font:12px/30px 'microsoft yahei';
+}
+
+.searchBar .radiocss{
+	width:20px!important;
+	margin-left: 20px;
+	margin-top: 2px;
+}
+.statistic  table tbody td{
+	/*border:1px solid #e8e8e8!important;*/
+	border:1px solid #000!important;
+}
+.statistic  table {
+	border:1px solid #000!important;
+}
+
+.m-left-s{
+	    font-weight: bold;
+		margin-left:15px;
+	}
+	
+.grid_2 span{
+	 font-weight: bold;
+	     font-size: 16px;
+	}
+
+.jqdatepicker{
+	width:120px;
+	background:url(../images/workbench/calendar.png) right center no-repeat !important;
+}
+
+.w2{
+		font-weight: bold;
+	}
+	.w2 span{
+		color:red;
+		margin:0 5px;
+	}
+	.w1 span{
+		color:red;
+		margin:0 5px;
+	}
+	
+	.big-title{
+		margin-top:10px;
+	}
+	.small-title{
+		margin:10px 0 0 20px;
+	}
+	.sub-con{
+		margin:20px 0 -10px 0;
+	}
+	
+	.l-20{
+		margin-left:20px;
+	}
+	.searchBar .search select{
+		width:150px;
+		height:28px;
+		border:1px solid #e8e8e8;
+	}
+	
+	.searchBar .search .age{
+		width:60px;
+	}
+
+/* 演示添加css  */
+#orderTrackingDialog .listContent{
+	height:450px;
+	overflow:auto;
+}
+
+#orderTrackingDialog .fn-left{
+	padding-left:10px;
+}
+
+/* 月关怀页面修改 */
+.careMonthListWr .tableMod table thead th{
+	height:80px!important;
+	line-height:80px!important;
+	/*font-size:18px;*/
+	font-size:15px;
+	font-family:"Microsoft Yahei"!important;
+	/*color:#525252;*/
+}
+.careMonthListWr .enclosure{
+	width:20px;
+	height:22px;
+}
+
+

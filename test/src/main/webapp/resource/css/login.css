@@ -1,0 +1,214 @@
+body, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color:#fff;
+}
+.dcd-login{
+	width:100%;
+	height:100%;
+}
+.dcd-logCon{
+	
+}
+.dcd-logo{
+	width:1000px;
+	margin:0 auto;
+	height:90px;
+	text-indent:-999em;
+	background:url(../images/workbench/update/logo.png) left center no-repeat;
+}
+.dcd-loginC {
+	width:100%;
+	height:383px;
+	margin:0 auto;
+	position:relative;
+	background:#467e0b url(../images/login/login.png) center center no-repeat;
+}
+.dcd-logform {
+	width: 290px;
+	height: 330px;
+	background-color:#fff;
+	position: absolute;
+	top: 44px;
+	right:22%;
+}
+.dcd-logform form{
+	padding:15px;
+}
+
+/* 验证码样式开始 */
+.validateCode{
+	width: 254px;
+	height: 28px;
+	margin: 15px auto;
+}
+
+.codeInputDiv{
+	float:left;
+	width:145px;
+	height: 29px;
+	margin:0 -5px;
+	padding:0 5px;
+	background:#fff;
+	border-radius:3px;
+}
+
+.codeInput{
+	width:100%;height:100%;border: 1px solid #cccccc;
+}
+
+.codeImgDiv{
+	float:left;width:90px;height: 30px;    margin-left: 13px; padding: 0 3px;
+}
+.saveimg{
+	width:100%;height:100%;cursor: pointer;
+}
+
+
+/* 验证码样式结束 */
+.dcd-logform .inputSearch{
+	width: 254px;
+	height: 60px;
+	*display:inline;
+	*zoom:1;
+	cursor: pointer;
+	background-color:#fff;
+	margin: 0 auto 10px;
+}
+.dcd-logform .inputSearch label{
+	display:block;
+	margin-top:5px;
+	font:12px "宋体";
+	color:#666;
+}
+.dcd-logform .inputSearch .searchT {
+	width: 254px;
+	height:60px;
+}
+.dcd-logform .inputSearch .inputText{
+	width: 254px;
+	height: 34px;
+	padding:5px;
+	margin:12px auto;
+	font:12px/32px "宋体";
+	background-color: #fff;
+	border:1px solid #cccccc;
+	text-indent:2px;
+	color:#666;
+	box-sizing:border-box;
+}
+.dcd-logform .inputSearch .inputText:hover{
+	background-color:#fff9f1;
+	border:1px solid #ffc683;
+}
+.dcd-logform .inputBtn{
+	width:254px;
+	height: 40px;
+	overflow: hidden;
+	margin: 18px auto;
+}
+.dcd-logform .inputBtn a {
+	width: 254px;
+	height: 41px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	border:none;
+	font:bold 14px/41px '宋体';
+	background:url(../images/login/login_btn.png) 0 0 no-repeat;
+}
+.dcd-logform .inputBtn a:hover{
+	background-position:0 -42px;
+}
+
+.dcd-logform .inputSearchCheckbox {
+	font: 12px/30px "";
+	color: #666666;
+	overflow:hidden;
+	margin: 0 auto;
+	width: 254px;
+}
+.dcd-logform .inputSearchCheckbox input{
+	vertical-align: middle;
+}
+.dcd-logform .inputSearch .errorInput {
+	background: url(../images/login/error_tit.png) 97% center no-repeat;
+}
+#loginInfo{
+	color:#f08519;
+	font:12px/30px '宋体';
+	margin:0 0 0 2px;
+	text-indent:22px;
+	background: url(../images/login/warn.png) left center no-repeat;
+}
+.copyright{
+	width:1000px;
+	margin:0 auto;
+	border-top:1px solid #cccccc;
+	color:#666666;
+	font:12px/50px '宋体';
+	margin-top:95px;
+	text-align: center;
+}
+.hidden{
+	display:none !important;
+
+.ui-layout-south .copyright{
+	margin-top:5px;
+	text-align: center;
+}
+.technicalSupport a{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

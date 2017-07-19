@@ -1,0 +1,689 @@
+﻿#callInfoDialog{
+	overflow-y:auto;
+}
+/* baseInfo */
+.callInfoDialog{
+	overflow:hidden;
+}
+.callInfoDialog .tit {
+	overflow:hidden;
+	height: 32px;
+  	margin-bottom: -1px;
+}
+.callInfoDialog .tit li{
+	float:left;
+	min-width:78px;
+	height:30px;
+	border:1px solid #ffc683;
+	border-radius:5px 5px 0 0;
+	margin-right:10px;
+	text-align: center;
+  	padding: 0 8px;
+}
+.callInfoDialog .tit li.on{
+	border-bottom: 1px solid #fff;
+}
+.callInfoDialog .tit li a{
+	font:14px/30px 'Microsoft Yahei';
+	color:#6b6b6b;
+}
+.callInfoDialog .borderTop{
+	border-top:1px solid #ffc683;
+}
+.zTable{
+  margin: 0;
+  width: 100%;
+  margin-bottom:5px;
+}
+.baseInfoTable{
+	margin-bottom: -1px;
+}
+.zTable th,.zTable td{
+	padding: 1px 3px 9px 10px;
+	margin: 0;
+}
+.historyIncomingDialog .zTable th{
+	text-align:center;
+}
+.zTable td a{
+	color:#176eb8;
+	text-decoration:underline;
+}
+.zTable .tableTitle{
+	background-color: #818181;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eeeeee');
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eeeeee));
+	background-image: -webkit-linear-gradient(top, #fafafa, #eeeeee);
+    background-image: -moz-linear-gradient(top, #fafafa, #eeeeee);
+    background-image: -ms-linear-gradient(top, #fafafa, #eeeeee);
+    background-image: -o-linear-gradient(top, #fafafa, #eeeeee);
+    background-image: linear-gradient(top, #fafafa, #eeeeee);
+    border-top:1px solid #ffc683;
+}
+.zTable .tableTitle h3{
+	padding-left:8px;
+	color:#333;
+	font: 14px 'Microsoft Yahei';
+}
+.zTable .tableTitle h3 span{
+	color:#ff0000;
+}
+/* historyIncoming */
+.historyIncomingDialog .headerTit{
+	margin:15px 0;	
+}
+.historyIncomingDialog .headerTit input,.historyIncomingDialog .headerTit select {
+  width: 108px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ccc;
+}
+.historyIncomingDialog .headerTit input{
+  text-indent: 10px;
+}
+.historyIncomingDialog .headerTit span{
+	padding:0 15px;
+}
+.tableMod h2{
+	color:#666666;
+	font:bold 14px 'Microsoft Yahei';
+	margin-bottom:10px;
+}
+/* 当前订单 */
+.currentServiceOrder{
+	margin:10px 0;
+}
+/*
+.ui-dialog .ui-dialog-content{
+	overflow-y:auto;
+}
+*/
+.commonDialog h3 {
+  margin-top: 10px;
+}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16, .grid_17, .grid_18, .grid_19, .grid_20, .grid_21, .grid_22, .grid_23, .grid_24{
+	height:40px;
+	line-height:40px;
+}
+#callTrackingDialog{
+	padding-top:2px;
+}
+
+/* 评价  */
+#evaluateOrderForm{
+	margin-top:10px;
+}
+.commonDialog textarea{
+  width: 80%;
+  border: 1px solid #e7e7e7;
+}
+.commonDialog .heightAuto {
+  height: auto;
+}
+#flowDivCenterDialog .commonDialog h3{
+	margin:0;
+}
+#orderMaintainDialog{
+	padding-top:8px;
+}
+/* 生成订单 */
+.generateOrders .container_24 .filterService{
+	width:100%!important;
+}
+.generateOrders .filterBtn{
+	width:62px;
+	height:28px;
+	border:0 none;
+	text-align:center;
+	font:12px/28px 'Microsoft Yahei';
+	color:#fff;
+	cursor:pointer;
+	background:url(/resource/images/callInfo/filter.png) left center no-repeat;
+}
+.generateOrders .tableCenter{
+	margin-top:15px;
+}
+.generateOrders .tableCenter .orderTable th,.generateOrders .tableCenter .orderTable td{
+	text-align:center;
+}
+
+/* 筛选服务机构 */
+#filterBtnDialog{
+	  padding: 0;
+}
+.filterServiceDialog{
+	width: 100%;
+    height: 100%;
+	background:url(/resource/images/callInfo/map_bg.jpg) left center no-repeat;
+}
+.filterServiceDialog .leftMod,.filterServiceDialog .rightMod{
+	display:inline-block;
+}
+.filterServiceDialog .leftMod{
+  	width: 210px;
+  	box-sizing: border-box;
+}
+.filterServiceDialog .searchHeader{
+	margin:12px 12px 5px;
+	padding: 0 15px 0 8px;
+}
+.filterServiceDialog .searchHeader .searchResult a{
+	color:#e87e00;
+}
+.filterServiceDialog .returnBtn{
+	float: right;
+  	display: inline;
+  	margin-right: 3px;
+}
+.filterServiceDialog .searchCont{
+
+}
+.filterServiceDialog .searchCont h3{
+	color:#3366cc;
+	font:12px/20px 'Microsoft Yahei';
+	padding-left: 15px;
+}
+.filterServiceDialog .searchCont h3 i{
+	display:inline-block;
+	margin-right: 6px;
+	width:18px;
+	height:25px;
+	color:#fff;
+	text-align:center;
+	font:12px/20px 'Arial';
+	background:url(/resource/images/callInfo/map_icon.png) no-repeat;
+}
+.ui-dialog #filterBtnDialog p{
+	font:12px/20px 'Microsoft Yahei';
+	margin:0;
+	text-indent: 16px;
+}
+.filterServiceDialog .searchCont li{
+	padding:10px 0;
+}
+.filterServiceDialog .searchCont li.on{
+	background-color:#fff;
+}
+.filterServiceDialog .searchCont .watchAllResultBtn{
+	width:118px;
+	height:30px;
+	border:0 none;
+	margin:25px 40px;
+	text-align:center;
+	cursor:pointer;
+	background:url(/resource/images/callInfo/search_result.png) left center no-repeat;
+}
+.filterServiceDialog .rightMod{
+	position: relative;
+	float: right;
+	overflow: hidden;
+	width: 585px;
+	height: 100%;
+}
+.filterServiceDialog .rightMod h2{
+	height:36px;
+	font: 12px/36px 'Microsoft Yahei';
+	text-indent: 16px;
+	background:url(/resource/images/callInfo/icon_tree.png) 55px center no-repeat;
+}
+.filterServiceDialog .mapLocation{
+	position:absolute;
+	left: 245px;
+  	top: 310px;
+	display:block;
+	width:27px;
+	height:38px;
+	background:url(/resource/images/callInfo/map.png) no-repeat;
+}
+.filterServiceDialog .rightMod .mapProp{
+	position:absolute;
+	top: 80px;
+  	left: 108px;
+  	display:none;
+	background-color:#fff;
+	opacity:0.95;
+	width:288px;
+	height:215px;
+	border:1px solid #ccc;
+}
+.filterServiceDialog .rightMod .propIcon{
+	position: absolute;
+	bottom: -34px;
+	width: 36px;
+	left: 50%;
+	height: 35px;
+	background:url(/resource/images/callInfo/map_prop_icon.png) no-repeat;
+}
+.filterServiceDialog .mapProp .hd{
+	position:relative;
+	height:31px;
+	line-height:31px;
+	color:#666;
+	text-indent:8px;
+	border-bottom:1px solid #ccc;
+}
+.filterServiceDialog .mapProp .propClose{
+	position:absolute;
+	right:10px;
+	top:5px;
+	width:21px;
+	height:21px;
+	background:url(/resource/images/callInfo/close.png) no-repeat;
+}
+.filterServiceDialog .mapProp .bd img{
+	width:266px;
+	height:75px;
+	overflow:hidden;
+	margin:10px;
+}
+.filterServiceDialog .mapProp .bd p{
+	text-align:left;
+	text-indent:10px;
+	line-height:20px;
+}
+.filterServiceDialog .mapProp .ft{
+	margin:10px 0;
+	border-top:1px solid #ccc;
+	text-align:center;
+}
+.filterServiceDialog .mapProp .ft a{
+	display: inline-block;
+	color:#e87e00;
+	padding: 10px 0 0;
+}
+#callEntranceDialog,#callingDialog{
+	overflow:hidden;
+}
+.callEntranceDialog,.callDialogWrap{
+  	height: 333px;
+  	width: 289px;
+  	display: block;
+  	padding-top: 80px;
+  	margin:0 auto;
+	background:url(/resource/images/callInfo/entrance_bg.png) left center no-repeat;
+}
+.callEntranceDialog .personInfo{
+	position:relative;
+	height:155px;
+	width: 126px;
+  	margin:-80px auto 0;
+}
+.callEntranceDialog .personInfo p{
+	margin-top:5px;
+	color:#333333;
+	font:20px 'Microsoft Yahei';
+}
+.callEntranceDialog .personInfo .entranceClose{
+	position: absolute;
+	top: 64px;
+	right: -50px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(/resource/images/callInfo/entrance_close.png) left center no-repeat;
+}
+.callEntranceDialog .photo{
+	width: 126px;
+  	height: 126px;
+  	border-radius:75px;
+	background-color:#fff;
+}
+.callEntranceDialog .photo img{
+	width:110px;
+	height:110px;
+	padding:8px;
+	overflow:hidden;
+	border-radius:75px;
+}
+.callEntranceDialog .bannerImg{
+	width:188px;
+	height:74px;
+	margin:0 auto;
+	background:url(/resource/images/callInfo/music_bg.png) left center no-repeat;
+}
+.callEntranceDialog .entranceBtn,.callDialogWrap .entranceBtn{
+	margin-top:11px;
+}
+.callEntranceDialog .entranceBtn a,.callDialogWrap .entranceBtn a{
+	width:216px;
+	height:40px;
+	display:block;
+	font:16px/40px 'Microsoft Yahei';
+	color:#fff;
+	margin:0 auto 12px;
+	text-align:center;
+	background-color:#11c967;
+}
+.callEntranceDialog .entranceBtn a.serviceBtn,.callDialogWrap .entranceBtn a.answering{
+	background-color:#f59139;
+}
+
+/* calling 入口 */
+
+.callDialogWrap .callingImg{
+	margin:0 auto;
+}
+.callDialogWrap .callingImg,.callDialogWrap .callingImg img{
+	width:220px;
+	height:220px;
+	overflow:hidden;
+	margin-top: -12px;
+}
+.callDialogWrap .callingImg img{
+	margin-top: -7px;
+}
+.callDialogWrap .entranceBtn{
+	margin-top:-3px;
+}
+/*wk*/
+/* add style */
+#conBox .submitBtn{
+	text-align:center;
+	width:100%;
+	hight:35px;
+	margin:20px 0;
+}
+#conBox .formSubmit,.reportSubmitBtn .submitBtnCont .saveformSubmit{
+	width:120px;
+	height:34px;
+	border:0 none;
+	color:#fff;
+	font:14px/32px 'Microsoft Yahei';
+	cursor:pointer;
+	padding-left: 15px;
+	background:url(../images/assessment/submit_bg.jpg) no-repeat;
+}
+.reportSubmitBtn .submitBtnCont .saveformSubmit{
+	width:160px;
+}
+#conBox .formSubmit:hover,.reportSubmitBtn .submitBtnCont .saveformSubmit:hover{
+	background-position:0 -42px;
+}
+.addTable td{
+	padding:6px 7px;
+}
+.zTable td input[type='text'],.zTable td select{
+	width:200px;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+}
+.zTable td .spec_select{
+	width:180px;
+}
+.zTable td .litter{
+	height:24px;
+}
+.zTable td select{
+	min-height:32px; 
+	line-height:32px;
+	height:auto !important; 
+	height:32px; 
+	overflow:visible;
+}
+.zTable .addressBox select{
+	float:left;
+	margin-right:5px;
+}
+.zTable td input{
+	text-indent:10px;
+}
+.zTable td input[type='text']:hover,.zTable td select:hover{
+	border:1px solid #ffc683;
+	background-color:#fff9f1;
+	-webkit-box-shadow:0px 0px 8px #ffc683;
+    -moz-box-shadow: 0px 0px 8px #ffc683;
+	-o-box-shadow:0px 0px 8px #ffc683;
+	box-shadow:0px 0px 8px #ffc683;
+}
+.twoColTable td input,.twoColTable td select{
+	width:320px;	
+}
+.twoColTable td .address{
+	width:146px;
+	margin-right: 2px;
+}
+#conBox td .dataTime {
+	cursor: pointer;
+	background:url(../images/add/calendar.png) right center no-repeat;
+}
+.container_24 input[readonly],.container_24 input[disabled],.container_24 textarea[readonly],.container_24 textarea[disabled]{
+	background:#fafafa;
+}
+
+/*服务机构新增*/
+#serviceAgenciesAdd .zTable td input[type='text'],#serviceAgenciesAdd .zTable td select{
+	width:275px;	
+}
+.oldNumInfo{
+	border:1px solid #cccccc;
+	background:#f2f3f5;
+	margin:10px 0 0;
+	padding:10px 0;
+}
+.oldNumInfo ul li{
+	float:left;
+	width:210px;
+	padding: 0 0 0 10px;
+	font:14px/32px 'Microsoft Yahei';
+	color:#555555;
+	overflow:hidden;
+}
+.oldNumInfo ul .last{
+	padding:0;
+}
+#serviceAgenciesAdd .zTable{
+	width:100%; 
+}
+#serviceAgenciesAdd .zTable td .oldNumInfo ul li input[type='text']{
+	width:50px;
+}
+#remark{
+	width: 272px;
+  	height: 100px;
+}
+.oldNumInfo .pointer{
+	width:15px;
+	height:9px;
+	background:url(../images/workbench/pointer.gif) no-repeat;
+	left:6px;
+	top:-9px;
+}
+
+#addNonprofitsArea{
+	text-indent: 10px;
+	height:70px;
+	width:99%;
+	border: 1px solid #ccc;
+}
+#serviceAgenciesAdd .zTable .homeAddress select{
+	width:180px;
+}
+#serviceAgenciesAdd .zTable .homeAddress input[type='text']{
+	width:375px;
+	height:24px;
+}
+
+#serviceAgenciesAdd .zTable .serAreaType{
+	overflow-y: scroll;
+	display: block;
+	height: 150px;
+}
+#serviceAgenciesAdd .zTable .serAreaType .pointer,#serviceAgenciesAdd .zTable .serAreaType .cursor{
+	display: inline-block;
+	width: 6px;	
+	height: 10px;
+	cursor:pointer;
+	padding-right:5px;
+}
+#serviceAgenciesAdd .zTable .serAreaType .hold .pointer,#serviceAgenciesAdd .zTable .serAreaType .holding .cursor{
+	background: url(../images/workbench/icon_holding.png) 0 center no-repeat;
+}
+#serviceAgenciesAdd .zTable .serAreaType .extend .pointer,#serviceAgenciesAdd .zTable .serAreaType .extending .cursor{
+	background: url(../images/workbench/icon_expand.png) 0 center no-repeat;
+}
+#serviceAgenciesAdd .zTable .serAreaType .hold .childItem,#serviceAgenciesAdd .zTable .serAreaType .holding .grandsonItems{
+	display:none;
+}
+#serviceAgenciesAdd .zTable .serAreaType .extend .childItem,#serviceAgenciesAdd .zTable .serAreaType .extending .grandsonItems{
+	display:block;
+}
+#serviceAgenciesAdd .zTable .serAreaType li ul{
+	padding-left:20px;
+}
+
+/*服务类目*/
+.catalogTable thead{
+	text-align:center;	
+}
+.catalogTable thead{
+	text-align:center;	
+}
+.catalogTable th{
+	text-align:center;
+	background: #eaeaea;
+	background: -moz-linear-gradient(top, #fbfbfb, #eaeaea);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#eaeaea));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#fbfbfb', EndColorStr='#eaeaea');
+}
+.catalogTable th{
+	padding: 3px 3px 3px 12px;
+}
+.catalogTable td{
+	padding: 6px 9px 0;
+	height:36px;
+	line-height:32px;
+	text-align: center;
+}
+.catalogTable .alignLeft{
+	text-align:left;
+}
+.catalogTable td input{
+	width: 100%;
+	padding:0 10px;
+	background:#fff;
+}
+.zTable td .disabled[type='text']{
+	border:none;
+}
+.zTable td .disabled:Hover{
+	border:none;
+	background-color: transparent;
+	-webkit-box-shadow: 0 0 0 transparent;
+	-moz-box-shadow: 0 0 0 transparent;
+	-o-box-shadow: 0 0 0 transparent;
+	box-shadow: 0 0 0 transparent;
+}
+.catalogTable .files .filesBox{
+	width:125px;
+	margin:0 auto;
+}
+.catalogTable .files object{
+	float:left;
+	width:82px;
+	height:26px;
+}
+.catalogTable .files .custom-queue{
+	display: inline;	
+	width:37px;
+	height:37px;
+	margin:0 5px 0 0;
+	padding:0;
+	border:none;	
+	overflow:hidden;
+	position: relative;
+	top: -3px;
+}
+.catalogTable .files .custom-queue img{
+	display: block;	
+	width:35px;
+	height:35px;
+	border:1px solid #c7c7c7;	
+}
+
+.catalogTable .move .moveit{
+	display:inline-block;
+	width:11px;
+	height:15px;
+	margin: 10px 7px 0;
+	overflow:hidden;
+	background: url(../images/workbench/icon_move.png) no-repeat 0 0;
+	text-indent:-9999px;
+}
+.catalogTable .move .move-top{
+	background-position:0 0;
+}
+.catalogTable .move .move-up{
+	background-position:-37px 0;
+}
+.catalogTable .move .move-down{
+	background-position:-75px 0;
+}
+.catalogTable .move .move-btm{
+	background-position:right 0;
+}
+.catalogTable .holding .item-sub{
+	display: none;
+}
+.catalogTable .item-sup .saveBox,.catalogTable .item-sub .saveBox{
+	display: block;
+}
+.catalogTable .item-sup .operationBtn,.catalogTable .item-sub .operationBtn{
+	width: 35px;
+}
+.catalogTable .item-sup .unsaveBox,.catalogTable .item-sub .unsaveBox{
+	display: none;
+}
+.catalogTable .trEdit .saveBox{
+	display: none;
+}
+.catalogTable .trEdit .unsaveBox{
+	display: block;
+}
+.catalogTable .trEdit .unsaveBox .saveBtn{
+	margin:0 auto;
+}
+.catalogTable .item-sup .subIcon{	
+	margin-left:10px;	
+}
+.catalogTable .item-sup .subIcon .switch,.catalogTable .subIcon .txtclear{
+	display:inline-block;
+	cursor:pointer;
+	width:10px;
+	height:10px;
+}
+.catalogTable .expand .item-sup .subIcon .switch{	
+	padding:0 0 0 6px;	
+	background: url(../images/workbench/icon_expand.png) 0 center no-repeat;	
+}
+.catalogTable .holding .item-sup .subIcon .switch{	
+	padding:0 0 0 15px;	
+	background: url(../images/workbench/icon_holding.png) 0 center no-repeat;	
+}
+.catalogTable .item-sub .subIcon{
+	padding:0 0 0 21px;
+	margin-left:40px;
+	text-align: left;
+	background: url(../images/workbench/icon_subitem.png) 0 center no-repeat;	
+}
+.catalogTable .subIcon .txtclear{
+	padding:0 0 0 6px;	
+	background: url(../images/workbench/icon_clear.png) right center no-repeat;
+}
+.catalogTable .uploadifyQueueItem{
+	display:none;
+}
+.zTable td .operationBtn {
+    float: left;
+    padding: 0px 4px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color:#333;
+}
+.leftPart .welcomeUs {   
+    font: 12px/35px 'Microsoft Yahei';    
+}
+/*end of wk*/
+

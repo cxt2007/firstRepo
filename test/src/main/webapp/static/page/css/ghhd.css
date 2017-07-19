@@ -1,0 +1,79 @@
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+.hide{display:none !important;}
+
+.col-md-6{margin:5px 0;}
+.autoWidth{width:auto;}
+.tag{background:#ccc;padding:5px 10px;border-radius:5px;margin:5px;}
+.m_r_0{margin-right:0 !important;}
+.color_black{color:#394263 !important;}
+.noData{width:100%;height:200px;line-height:200px;font-size:24px;text-align:center;}
+
+.photoList{padding-top:0;border-top:none;margin-top:5px;}
+
+.chosen-container{vertical-align: baseline;}
+
+.fileuploadBtn{width:100%;height:60px;float:left;}
+
+.leftForm_20{float:left;width:20%;}
+.leftForm_30{float:left;width:30%;}
+.leftForm_40{float:left;width:40%;}
+.leftForm_50{float:left;width:50%;}
+.leftForm_60{float:left;width:60%;}
+.leftForm_70{float:left;width:70%;}
+.leftForm_80{float:left;width:80%;}
+.rightForm_20{float:left;width:20%;}
+.rightForm_30{float:left;width:30%;}
+.rightForm_40{float:left;width:40%;}
+.rightForm_50{float:left;width:50%;}
+.rightForm_60{float:left;width:60%;}
+.rightForm_70{float:left;width:70%;}
+.rightForm_80{float:left;width:80%;}
+
+.c_eee{color:#aaa;}
+
+.ad_img_upload_box{width:100%;height:100px;border:1px solid #eee;overflow:hidden;position:relative;}
+.ad_img_upload_box img{max-width:100%;max-height:100%;}
+.ad_img_upload_box .remind{position:absolute;z-index:10;left:0;right:0;text-align:center;height:100px;line-height:100px;}
+.ad_img_upload_box span{display:block;height:20px;font-size:18px;font-weight:bold;}
+
+.phone_width{width:360px;}
+.nowPreview{border:1px solid #eee;padding:10px;}
+.nowPreview img{max-width:100%;}
+.articleTitle{width:100%;padding:5px 0;font-size:18px;font-weight:bold;}
+.ad_img{width:100%;height:70px;border-radius:5px 5px 0 0;overflow: hidden;position: relative;}
+.ad_img img{max-width: 100%;position: absolute;left:0;top:50%;}
+.preview_adBox{width:100%;height:110px;border-radius:5px;border:1px solid #eee;box-shadow:0px 2px 1px #ccc;margin-top:10px;}
+.previewTitle{width:100%;height:40px;line-height:40px;word-break: break-all;position: relative;}
+.previewTitle span{float:left;}
+.previewTitle span.tg{position: absolute;width:40px;height:22px;line-height:22px;left:10px;top:50%;margin-top:-12.5px;border:1px solid #ccc;text-align: center;font-size: 12px;border-radius:3px;}
+.previewTitle span.font{margin-left:60px;height:40px;line-height:40px;}
+.timeAndPublisher{width:100%;height:30px;line-height:30px;}
+.timeAndPublisher span{float:left;height:30px;margin-right:10px;}
+.previewRead{width:100%;height:30px;line-height:30px;overflow:hidden;}
+.previewRead span.l{float:left;margin-right:10px;}
+.previewRead span.r{float:right;}
+.href{color:#72ACE3;}
+
+.viewList{height:auto;margin-left:-20px;margin-right:-20px;margin-top:-10px;}
+.adBox{width:510px;height:auto;margin:10px;padding:5px;border:1px solid #eee;float:left;}
+.adBox .adBox_url{width:500px;height:278px;margin:5px 0;text-align:center;overflow:hidden;position:relative;}
+.adBox .adBox_url img{width: 100%;position: absolute;top:50%;left:0;}
+.adBox_title{width:100%;height:30px;line-height:30px;overflow: hidden;border-bottom:1px solid #eee;}
+.adBox_title span.l{max-width:60%;font-size: 18px;float:left;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.adBox_title span.r{max-width:40%;float:right;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.adBox_btnlist{width:100%;height:auto;padding:3px 0;text-align:center;border-top:1px solid #eee;}
+.adBox_btnlist button{margin:0 10px;}
+
+.check{display:inline;height:25px;float:left;}
+.checkname{float:left;height:30px;line-height:33px;margin-left:5px;}
+.thmeform-prize-p-1{padding-left:0px;width:100px;}
+.thmeform-prize-p-2{padding-left:0px;width:180px;}
+.thmeform-prize-p-3{float:left;}
+.thmeform-prize-p-4{padding-left:0;padding-right:0;float:left;width:20px;padding-top:8px;}
+.thmeform-prize-p-5{float:left;line-height:36px;height:36px;}
+.thmeform-prize-p-6{padding-left:5px;padding-right:5px;width:100px;}
+.thmeform-prize-p-7{padding-left:0px;padding-top:10px;cursor:pointer;width:60px;}
+
+.filePicker{position: absolute;left:0;top:0;width:100%;height:100%;border-radius:50%;overflow: hidden;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;z-index:20;}
+.webuploader-pick{width:100%;height:100%;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}

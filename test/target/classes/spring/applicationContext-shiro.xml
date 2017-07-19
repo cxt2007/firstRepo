@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+	default-lazy-init="true">
+
+	<description>Shiro安全配置</description>
+
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="shiroDbRealm" />
+       <property name="cacheManager" ref="customShiroCacheManager"/>
+		<property name="sessionManager" ref="defaultWebSessionManager" />
+        	<!-- <property name="cacheManager" ref="shiroEhcacheManager" /> -->
+	</bean>
+	
+	<bean id="customShiroCacheManager" class="org.cxt.framework.shiro.CustomShiroCacheManager">
+        <property name="shiroCacheManager" ref="memcachedShiroCacheManager"/>
+    </bean>
+    
+	<bean id="defaultWebSessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">  
+        <property name="globalSessionTimeout" value="1200000"/>
+        <property name="sessionDAO" ref="customShiroSessionDAO"/>
+        <property name="sessionIdCookie" ref="simpleCookie"/>
+        <property name="sessionListeners">
+            <list>
+                <ref local="customSessionListener"/>
+            </list>
+        </property> 
+        <property name="deleteInvalidSessions" value="true"/>
+    </bean>
+ 
+    <bean id="memcachedShiroCacheManager" class="org.cxt.framework.shiro.MemcachedShiroCacheManager">
+    </bean>
+
+	<bean id="customShiroSessionDAO" class="org.cxt.framework.shiro.CustomShiroSessionDAO">  
+	    <property name="shiroSessionRepository" ref="memcachedSessionRepository" />  
+	</bean>  
+	
+    <!-- custom shiro session listener -->
+    <bean id="customSessionListener" class="org.cxt.framework.shiro.CustomSessionListener">
+        <property name="shiroSessionRepository" ref="memcachedSessionRepository"/>
+    </bean>
+	      
+	<bean id="memcachedSessionRepository" class="org.cxt.framework.shiro.MemcachedSessionRepository" />  
+	
+    <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg index="0" value="JSESSIONID_COOKIE"/>
+        <property name="httpOnly" value="true"/>
+    </bean>
+    
+	<!-- 項目自定义的Realm, 所有accountService依赖的dao都需要用depends-on声明 -->
+	<bean id="shiroDbRealm" class="org.cxt.framework.shiro.ShiroDbRealm" depends-on="">
+	</bean>
+
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login" />
+		<property name="successUrl" value="/" />
+		<property name="unauthorizedUrl" value="/login" />
+		<property name="filters">
+			<util:map>
+				<entry key="authc" value-ref="loginFormAuthentication" />
+				<entry key="mobileAuthc" value-ref="mobileLoginAuthenticationFilter" />
+				<entry key="logout" value-ref="logoutFilter" />
+				<entry key="userValidation" value-ref="userValidationFilter" />
+				<entry key="onlineSession" value-ref="onlineSessionFilter" />
+				<entry key="syncOnlineSession" value-ref="syncOnlineSessionFilter" />
+				<entry key="syncOnlineSession" value-ref="syncOnlineSessionFilter" />
+				<entry key="anonOrauthc" value-ref="anonOrauthcFilter" />
+				<entry key="kickout" value-ref="kickoutSessionControlFilter" />
+			</util:map>
+		</property>
+		<property name="filterChainDefinitions">
+			<value>
+				/login = authc
+				/logout = logout
+				/static/** = anon
+				/component-modules/** = anon
+				/config/** = anon
+				/gallery/** = anon
+				/node-modules/** = anon
+				/sea-modules/** = anon
+				/views/** = anon <!--项目特定页面的业务层js,css,image都在这里 -->
+				/api/** = anon
+				/yeywechat/** = anon
+				/mnlogin/** = anon
+				/upload/** =anon
+				/verify/** = anon
+				<!-- 对于通过微信手机客户端访问的contrller的认证进行过滤，后续需要改进，该方式不可取 start -->
+				<!-- 学校简介，明细过滤 -->
+				/yqdt/xxjj/getXxjjItemForWx/** = anon
+				/yqdt/yqdt/getYqdtItemsForWx/** = anon
+				/yqdt/yqdt/getBjdtForWx/** =anon
+				<!-- 师资队伍 -->
+				/xtgl/bjsj/getBjsjItemsForWx/** = anon
+				<!-- 网络资源 儿歌故事，经典音乐，经典游戏 -->
+				/klxx/wlzy/getWlzyItemForWx/** = anon
+				/klxx/wlzy/getYsclItemForWx/**= anon
+				/klxx/wlzy/getWlzyItemsForWx/** = anon
+				/klxx/wlzy/getKlxxItemsForWx/** = anon
+				<!-- 网络资源 微课回调 -->
+				/klxx/wlzy/transcodingFinish = anon
+				<!-- 网络资源 创意天地 -->
+				/klxx/wlzy/getBjkjItemsForWx/** = anon
+				/klxx/wlzy/getGrkjItemsForWx/** = anon
+				/klxx/wlzy/getBjkjItemForWx/** = anon
+				/klxx/wlzy/getBjkjItemsForWxQd/** = anon
+				/klxx/wlzy/getGrkjItemForWx/** = anon
+				/klxx/wlzy/getSetPicQueryRangeFormForWx/** = anon
+				/klxx/wlzy/setXc/** = anon
+				/klxx/wlzy/updateStuidsForWx/** = anon
+				/klxx/wlzy/updateBjidsForWx/** = anon
+				/klxx/wlzy/sendPhotoForWx/** =anon
+				<!-- 园区动态 班级动态 -->
+				/yqdt/yqdt/getYqdtItemForWx/** = anon
+				/yqdt/yqdt/getYqdtItemsForWx/** = anon
+				/klxx/message/getMessageForWx/** = anon
+				/klxx/message/ajax_saveMessage/** = anon
+				/klxx/message/addMessageForWx/** = anon
+				/yqdt/yqdt/getYqdtItemsForWxQd/** = anon
+				/yqdt/yqdt/getSchoolItemForWx/** = anon
+				/yqdt/yqdt/getSchoolFormForWx/** = anon
+				/yqdt/yqdt/getXxjsForWx/** =anon
+				/yqdt/yqdt/getXxjsForWx_NEW/** = anon
+				/yqdt/yqdt/getXwdtForWx_NEW/** = anon
+				/yqdt/yqdt/getXxlsForWx/** =anon
+				/yqdt/yqdt/getXxlsForWx_NEW/** = anon
+				/yqdt/yqdt/search_CampusForWx/** = anon
+				/yqdt/yqdt/getXwdtForWx/** =anon
+				/yqdt/yqdt/getXxxwForWx/** = anon
+				/yqdt/yqdt/getXxjjdtByTypeForWx/** = anon
+				/yqdt/yqdt/getCampusForWx/** = anon
+				/yqdt/yqdt/ajax_Xwdt/** = anon
+				/jyhd/mrcpref/getMrcpItemsForQh/** = anon
+				/jyhd/mrcpref/getMrcpItemsForZKY/** = anon
+				/jyhd/mrcpref/getMrcpItemsForWz/** = anon
+				/jyhd/mrcpref/getAjax_WeekForWx/** = anon
+				/yqdt/yqdt/ajax_Xwgg/** =anon
+				/yqdt/yqdt/wxIndex/** = anon
+				/yqdt/yqdt/wxIndex_NEW/** = anon
+				/yqdt/yqdt/bindingError/** = anon
+				/yqdt/yqdt/payError/** = anon
+				<!-- 通知提醒：1学校通知 2班级通知 3温馨提示 4 每周食谱 -->
+				/jyhd/tz/getTzItemForWx/** = anon
+				/klxx/resource/getIndexForWx/** =anon
+				/klxx/resource/ajax_getIndexResource/** = anon
+				/klxx/resource/getCatagoryListForWx/** = anon
+				/klxx/resource/getUserForWx/** = anon
+				/klxx/resource/getPayedTypeForWx/** = anon
+				/klxx/resource/getPayedResourceForWx/** = anon
+				/klxx/resource/getResourceByCatagoryForWx/** = anon
+				/klxx/resource/searchResourceForWx/** = anon
+				/klxx/resource/getSearchFormForWx/** = anon
+				/klxx/resource/getCatagoryBoxForWx/** = anon
+				/klxx/resource/ajax_addStore/** = anon
+				/klxx/resource/ajax_delStore/** = anon
+				/klxx/resource/getStoreForWx/** = anon
+				/klxx/resource/getHistoryForWx/** = anon
+				/klxx/homework/getHwItemForWx/** = anon
+				/klxx/homework/sendHomeworkForWx/** = anon
+				/klxx/tyzy/getTyzyForWx/** = anon
+				/klxx/tyzy/ajax_saveTyzy/** = anon
+				/klxx/resource/ajax_payResource/** = anon
+				/klxx/resource/ajax_addPlayCount/** = anon
+				/jyhd/tz/getTzItemsForWx/** = anon
+				/jyhd/tz/getTzItemsForWxQd/** =anon
+				/klxx/homework/getHomeWorkForWx/** = anon
+				/klxx/wlzy/getYsclFrom/** = anon
+				/xscj/cjgl/getKsItemForWx/** = anon
+				/xscj/cjgl/ajax_xqks_stat/** = anon
+				/xscj/cjgl/ajax_kcks_stat/** =anon
+				/xscj/cjgl/chart/querydata/**=anon
+				/xscj/cjgl/getXsksForWx/** =anon
+				/xscj/cjgl/getXqItemsForWx/** = anon
+				/xscj/cjgl/getCjStatForWx/** = anon
+				/xscj/cjgl/getCjStatForWx/querydata/** = anon
+				/jyhd/mrcpref/getMrcpItemForWx/** = anon
+				/jyhd/mrcpref/getMrcpItemsForWx/** = anon
+				/jyhd/mrcpref/getMrcpItemsForTab/** = anon
+				/xtgl/xsjb/getXsjbItemsForWx/** = anon
+				/jyhd/tz/sendTzItemForWx/** =anon
+				/jyhd/tz/createForWx/** = anon
+				/jyhd/tz/getTzFormManageForWx/** =anon
+				/jyhd/tz/getTzManageForWx/** = anon
+				/jyhd/jzqd/getQdForWx/** =anon
+				/jyhd/jzqd/ajax_getQd/** = anon
+				/jyhd/tz/ajax_getTzManageList/**= anon
+				/jyhd/tz/ajax_sendNoticeForWx/** = anon
+				/jyhd/tz/queryReplyMsgInfo/** = anon
+				<!-- 通知提醒：联系老师 -->
+				/push/pushmsg/getContactTeacherForWx/** = anon
+				/push/pushmsg/sendContactTeacherForWx/** = anon
+				<!-- 平安校园：家长请假 -->
+				/jyhd/paxy/askForLeaveFormForWx/** = anon
+				/jyhd/paxy/askForLeaveCreateForWx/** = anon
+				/kindergarten/returnmsg/** = anon
+				/jyhd/paxy/getPaxyWeek/** = anon
+				/xtgl/card/ajax_query_ls/** = anon
+				<!-- 消息回复 -->
+				/push/pushmsg/replyFormForWx/** =anon
+				/push/pushmsg/replyMsgForWx/**=anon
+				<!-- 其它更多：宝宝信息修改 -->
+				/xtgl/xsjb/updateXsjbForWx/** =anon
+				/xtgl/xsjb/updateXsjbInfoForWx/** =anon
+				<!-- 个人课表 -->
+				/klxx/pkgl/pksjFormForWx/** =anon
+				<!--大比拼过滤 -->
+				/klxx/share/** =anon
+				/proxy/** = anon
+				/mobile/** = anon
+				/klxx/homework/saveHomeworkForWx/** = anon
+				<!-- 班级动态手机管理 -->
+				/filehandel/picupload/** = anon
+				/yqdt/yqdt/getYqdtManageForWx/** =anon
+				<!-- 微信支付 -->
+				/bizpaygetpackage/** = anon
+				/payfeedback/** = anon
+				/wxpay/** = anon
+				/alipay/** = anon
+				<!-- end -->
+				/register/** = anon
+				/returnmsg/** = anon
+				/login/** = anon
+				/login/userLoginForApp/** = anon
+				/xtgl/xsjb/getXsjbInfoForApp/** =anon
+				/yqdt/lyjy/replyMsgForWx/** = anon
+				/yqdt/lyjy/replyForWx/** =anon
+				<!-- /admin/** = roles[admin] -->
+				/** = user
+			</value>
+		</property>
+	</bean>
+
+	<!-- 用户授权信息Cache, 采用EhCache -->
+	<bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManagerConfigFile" value="classpath:ehcache/ehcache-shiro.xml" />
+	</bean>
+
+
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+
+
+	<!-- 加载sysCached数据 -->
+	<!-- <bean id="systemDataSource" class="com.space.wechat.framework.datasource.SystemDataSource"> 
+		<property name="postSchemaDao" ref="postSchemaDao"></property> <property 
+		name="postParamDao" ref="postParamDao"></property> </bean> -->
+
+	<!-- 加载sysCached数据 -->
+	<bean id="cacheUtil" class="com.space.wechat.framework.datasource.CacheUtil">
+		<property name="userDao" ref="userDao"></property>
+		<property name="orgDao" ref="orgDao"></property>
+		<property name="paxyDao" ref="paxyDao"></property>
+		<property name="oneCardMachineDao" ref="oneCardMachineDao"></property>
+		<property name="oneCardDao" ref="oneCardDao"></property>
+		<property name="bjsjDao" ref="bjsjDao"></property>
+		<property name="configDao" ref="configDao"></property>
+		<property name="msgLogDao" ref="msgLogDao"></property>
+		<property name="campusDao" ref="campusDao"></property>
+	</bean>
+
+	<!-- <bean id="savePaxyItemQueueServer" class="com.space.wechat.serverengine.SavePaxyItemQueueServer"> 
+		<property name="paxyService" ref="paxyService"></property> <property name="oneCardMachineService" 
+		ref="oneCardMachineService"></property> </bean> -->
+
+	<bean id="pushMsgUtil" class="com.space.wechat.framework.push.PushMsgUtil">
+		<property name="xsjbService" ref="xsjbService"></property>
+	</bean>
+
+	<bean id="pushMsgServer" class="com.space.wechat.framework.push.PushMsgServer">
+		<property name="pushLogService" ref="pushLogService"></property>
+	</bean>
+
+</beans>

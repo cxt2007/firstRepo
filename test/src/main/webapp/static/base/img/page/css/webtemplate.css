@@ -1,0 +1,9 @@
+.webtemplateList{width:100%;height:auto;float:left;}
+.webtemplateList ul{width:100%;height:auto;float:left;}
+.webtemplateList ul li{float:left;width:200px;height:260px;margin:10px;}
+.webtemplateList ul li .imgBox{width:100%;height:230px;background:#eee;}
+.webtemplateList ul li .imgBox img{width:100%;height:100%;border:none;}
+.webtemplateList ul li .click{width:100%;height:30px;line-height:30px;}
+.webtemplateList ul li .click .l{float:left;}
+.webtemplateList ul li .click .c{float: left;text-align: center;margin-left: 13%;margin-top: 3%;font-size: 19px;width: 30%;color: red;}
+.webtemplateList ul li .click .r{float:right;}

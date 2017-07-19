@@ -1,0 +1,32 @@
+.noMR {
+	margin-right: 0 !important;
+}
+
+.contentBox {
+	width:100%;
+	padding: 0 35px;
+	float: left;
+}
+
+.line_head {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 20px 0;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	font-size: 18px;
+}
+
+.img {
+	float: left;
+	overflow: hidden;
+	width: 160px;
+	height: 160px;
+	margin-right: 13px;
+	margin-bottom:20px;
+	position: relative;
+}
+
+.img img {
+	position: absolute;
+}

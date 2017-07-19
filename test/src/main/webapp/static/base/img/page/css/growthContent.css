@@ -1,0 +1,114 @@
+ul,li{list-style:none;padding:0;margin:0;}
+a{text-decoration: none;}
+.cl{clear:both;}
+.noData{width:100%;height:150px;line-height:150px;text-align: center;border:1px solid #eee;border-radius:5px;margin:10px 0;}
+.center{text-align:center;}
+.l{float:left;}
+
+.growthTitle{color:#31ad64;font-size:20px;line-height:35px;font-family:"微软雅黑";}
+.itemList{float:left;width:200px;}
+.itemList ul{background-color:#31ad64;padding:10px 0;}
+.itemList .active{background-color:#289253;}
+.itemList .itemTitle:hover{background-color:#289253;}
+.itemTitle{color:#fff;font-size:14px;line-height:45px;padding-left:20px;font-family:"微软雅黑";}
+.itemContent{margin-left:210px;height:100%;}
+.itemContent .itemBlock{border:solid 1px #dcdcdc;width:100%;background-color:#fff;border-radius:2px;padding:10px;}
+.itemTag{width:90px;height:67px;position:absolute;}
+.tagNotCompleted{background:url("../img/tag_not_completed.png") no-repeat;}
+.tagCompleted{background:url("../img/tag_completed.png") no-repeat;}
+.itemBlock .form-group .control-label{line-height:36px;float:left;}
+.itemBlock{display:none;overflow:hidden;}
+.itemContent .current{display:block;}
+
+.pageTitle{float:left;letter-spacing:7px;}
+.pageContent{float:left;width:68%;letter-spacing:0px;margin-left:-3%;}
+
+.itemFloat{position:absolute;top:0;}
+.itemFloatStudent{width:179px;height:169px;top:45px;right:5px;background:url("../img/growth/growth_top_student.png") no-repeat;}
+.itemFloatFriend{width:201px;height:200px;top:65px;left:215px;background:url("../img/growth/growth_top_friend.png") no-repeat;}
+
+.itemBottom{bottom:0;position:absolute;}
+.itemBottomStudent{width:280px;height:64px;background:url("../img/growth/growth_bottom_student.png") no-repeat;}
+.itemBottomFamily{width:182px;height:466px;background:url("../img/growth/growth_bottom_family.png") no-repeat;}
+.itemBottomTeacher{width:105px;height:378px;background:url("../img/growth/growth_bottom_teacher.png") no-repeat;}
+.itemBottomLeftMe{width:79px;height:141px;background:url("../img/growth/growth_bottom_left_me.png") no-repeat;}
+.itemBottomRightMe{width:253px;height:235px;background:url("../img/growth/growth_bottom_right_me.png") no-repeat;}
+.itemBottomLeftFriend{width:113px;height:97px;background:url("../img/growth/growth_bottom_left_friend.png") no-repeat;}
+.itemBottomRightFriend{width:255px;height:120px;background:url("../img/growth/growth_bottom_right_friend.png") no-repeat;}
+.itemBottomLeftFuture{width:140px;height:223px;background:url("../img/growth/growth_bottom_left_future.png") no-repeat;}
+.itemBottomRightFuture{width:137px;height:142px;background:url("../img/growth/growth_bottom_right_future.png") no-repeat;}
+.itemBottomLeftKindergarten{width:253px;height:177px;background:url("../img/growth/growth_bottom_left_kindergarten.png") no-repeat;}
+.itemBottomRightKindergarten{width:66px;height:165px;background:url("../img/growth/growth_bottom_right_kindergarten.png") no-repeat;}
+
+.unit{float:left;line-height:36px;color:#ccc;margin-left:10px;}
+
+.itemImage{position:relative;}
+.itemImage img{max-width:100%;}
+
+.filePicker{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;z-index:20;}
+.webuploader-pick{width:100%;height:100%;filter:alpha(opacity = 0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
+
+.borderGray{border:solid 1px #dcdcdc;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.contentTitle{float:left;background-color:#fff6bb;height:87px;width:76px;font-size:18px;padding:20px;}
+.contentText{margin-left:76px;height:86px;}
+
+.itemInfo .chosen-container .chosen-results{max-height:80px;}
+
+.itemContent .noticeBtn{display:none;position:absolute;right:11px;}
+
+.imgTitle{background-color:#fff6bb;border-top:none;border-top-left-radius:0;border-top-right-radius:0;height:30px;line-height:30px;}
+.imgBox{width:100%;padding-bottom:75%;background:#efefef no-repeat center;background-size:100% 100%;}
+.iconpath{background-image:url("../img/growth/growth_center_student.jpg");}
+.familyphoto{background-image:url("../img/growth/growth_center_family.jpg");}
+.handprint{background-image:url("../img/growth/growth_family_handprint.jpg");}
+.footprint{background-image:url("../img/growth/growth_family_footprint.jpg");}
+.teacherphoto{background-image:url("../img/growth/growth_center_teacher.jpg");}
+.mephoto{background-image:url("../img/growth/growth_center_me.jpg");}
+.friendphoto{background-image:url("../img/growth/growth_center_friend.jpg");}
+.futurephoto{background-image:url("../img/growth/growth_center_future.jpg");}
+.kindergartenphoto{background-image:url("../img/growth/growth_center_me.jpg");}
+
+#page_-1 img, #page_0 img{width:100%;}
+#page_0 .record-title{position:absolute;}
+
+#oWindow{position:fixed;z-index:2000;top:40%;color:#fff;padding:5px;font-size:16px;background-color:#fff;}
+#oWindow .winTop{border-bottom:solid 2px #31ad64;height:26px;padding:3px 10px 7px 10px;}
+#oWindow .winIcon{width:3px;background-color:#31ad64;height:100%;float:left;}
+#oWindow .winTitle{color:#31ad64;font-size:14px;height:100%;line-height:100%;float:left;margin-left:10px;}
+#oWindow .winClose{float:right;width:14px;height:14px;background:url("../img/ico_close.png") no-repeat;}
+#oWindow .winBottom{padding:10px 10px;}
+#oWindow .winContent{width:100%;border:none;height:100%;line-height:21px;resize:none;font-size:14px;color:#000;}
+#oWindow .winButton{float:left;width:100%;text-align:center;margin-top:10px;}
+#oWindow .winConfirm{background:#14c682;border:none;width:50%;border-radius:3px;font-size:14px;padding:5px 0;}
+.blackBg{position:fixed;top:0;left:0;right:0;bottom:0;background:black;z-index:89;filter:alpha(opacity:30);opacity:0.3;display:none;}
+
+
+#growthRecord{position: relative;}
+.itemContent .record-title{text-align: center;font-size: 40px;color: #463500;text-shadow: 2px 2px 6px #453c00;height:57px;}
+#growthRecord .record-date{font-family: "微软雅黑";font-size: 14px;text-align: center;margin-top: 7.5px;margin-bottom: 10px;height:37px;}
+#growthRecord .record-body{text-align: center;padding-left: 15px;padding-right: 15px;}
+#growthRecord .record-btn{width:10%;float: left;margin-top: 270px;}
+#growthRecord .image-box{height: 485px;overflow: hidden;width: 80%;float: left;border-radius: 5px;border: 1px solid #dcdcdc;position: relative;}
+#growthRecord .image-box img{min-width: 100%;}
+#growthRecord .icon_record_btn{background-image: url("../img/growth/growth_record_btn.png");display: inline-block;height: 48px;width: 48px;background-repeat: no-repeat;}
+#growthRecord .icon_record_btn_left{background-position: 0 0;}
+#growthRecord .icon_record_btn_right{background-position: 100% 0;}
+#growthRecord .record-textarea{padding: 40px 30px 30px 20px;margin-left: 10%;float: left;width: 80%;margin-top: 18px;border-radius: 5px;height:168px;border: 1px solid #dcdcdc;font-size: 14px;font-family: "微软雅黑";}
+#growthRecord .record-footer{text-align: center;}
+.record-footer .btn{width: 170px;border: 1px solid #31ad64;color: #31ad64;}
+.record-footer .btn-info{background-color: #31ad64;color: #ffffff;}
+.record-footer .btn-info[disabled]{background-color: #d9d9d9;border: 1px solid #d9d9d9;}
+#recordTitle .title{border: none;text-align: center;font-size:36px;}
+#recordTitle .title::-webkit-input-placeholder { font-size:30px;}
+#recordTitle .title:-moz-placeholder { font-size:30px}
+#recordTitle .title::-moz-placeholder { font-size:30px}
+#recordTitle .title:-ms-input-placeholder { font-size:30px}
+#growthRecord .record_ship{background-image: url("../img/growth/growth_record_image_ship.png");background-repeat: no-repeat;background-size: cover;width: 192px;height: 182px;position: absolute;bottom: 28px;right: 21px;}
+#growthRecord .record_balloon{background-image: url("../img/growth/growth_record_image_balloon.png");background-repeat: no-repeat;background-size: cover;width: 111px;height: 171px;position: absolute;top: 140px;left: 9px;z-index: 21;}
+#growthRecord .record_cloud{background-image: url("../img/growth/growth_record_image_cloud.png");background-repeat: no-repeat;background-size: cover;width: 99px;height: 76px;position: absolute;top: 24px;left: 144px;z-index: 21;}
+#growthRecord .record_flower{background-image: url("../img/growth/growth_record_image_flower.png");background-repeat: no-repeat;background-size: cover;width: 105px;height: 125px;position: absolute;bottom: 0;right: 0;}
+#growthRecord .record_leaf{background-image: url("../img/growth/growth_record_image_leaf.png");background-repeat: no-repeat;background-size: cover;width: 118px;height: 49px;position: absolute;bottom:15px;left: 126px;}
+#growthRecord .record_lion{background-image: url("../img/growth/growth_record_image_lion.png");background-repeat: no-repeat;background-size: cover;width: 192px;height: 182px;position: absolute;bottom: 28px;right: 21px;}
+#growthRecord .record_three_animals{background-image: url("../img/growth/growth_record_image_three_animals.png");background-repeat: no-repeat;background-size: cover;width: 195px;height: 340px;position: absolute;bottom: 8px;left: 8px;z-index: 21;}
+
+.noticeBtn .btn-info{width:auto;}

@@ -1,0 +1,68 @@
+.wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+.wrapper .listWrap{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+}
+.contWrap .hd,.contWrap .hd img{
+	width: 100%;
+	height: 5.277778rem;
+	overflow: hidden;
+}
+.contWrap .hd1,.contWrap .hd1 img{
+	width: 100%;
+	height: 15.277778rem;
+	overflow: hidden;
+}
+.contWrap .bd{
+	padding: 0 0.277778rem;
+}
+.contWrap .bd h2{
+	text-indent: 20px;
+	height: 0.916667rem;
+	color: #ff8822;
+	font: 0.488889rem/0.916667rem 'Microsoft Yahei';
+	border-bottom: 1px solid #ff8822;
+}
+.contWrap .bd p{
+	color: #666;
+	text-indent: 40px;
+	font: 0.488889rem/0.625rem 'Microsoft Yahei';
+}
+
+/* end of 和睦简介 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

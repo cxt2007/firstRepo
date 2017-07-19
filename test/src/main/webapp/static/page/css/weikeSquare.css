@@ -1,0 +1,110 @@
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+.width_200{width:200px;padding:0;margin:0;}
+.no_border{border:none !important;}
+.no_m_l{margin-left:0 !important;}
+.no_p{padding:0 !important;}
+
+
+.searchUl{padding:10px 20px;border-bottom:1px solid #dbe1e8;}
+.searchUl li{margin:5px;display:inline-block;}
+.searchBtn{padding:5px 10px;border:1px solid #dbe1e8;background:#eee;border-radius:5px;cursor:pointer;}
+.searchBtnActive{background:#7abce7;color:#fff;border:1px solid #fff;}
+
+.examUl{margin:-10px;overflow:hidden;}
+.examUl li{width:300px;height:160px;border:1px solid #ccc;background:#f2f2f2;border-radius:5px;padding:10px;float:left;margin:10px;}
+.examUl li.noData{margin:10px 50px;width:auto;height:160px;line-height:160px;text-align:center;background:#f2f2f2;padding:0;float:none;}
+.examUl li .examTitle{width:100%;height:30px;line-height:30px;font-size:16px;color:#32ad64;font-weight:bold;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.examUl li .examTitle a{color:#32ad64;}
+.examUl li .examTime{width:100%;height:30px;line-height:30px;}
+.examUl li .examTime span{float:left;margin-right:10px;}
+.examUl li .examTime span{float:left;}
+.examUl li .examBj{width:100%;line-height:20px;overflow:hidden;margin-bottom:10px;display: -webkit-box;text-overflow: ellipsis;overflow : hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.examUl li .examCourse{width:100%;height:30px;overflow:hidden;}
+.examUl li .examCourse span{float:left;border:1px solid #eee;background:#ccc;padding:5px;border-radius:5px;margin-right:3px;}
+
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+.noData{width:100%;height:150px;line-height:150px;text-align: center;border:1px solid #eee;border-radius:5px;margin:10px 0;}
+
+.selectBox{width:200px;float:left;margin:1px;}
+.inputBox{width:200px;float:left;margin:0 10px;}
+.btnBox{width:70px;float:left;margin:1px;}
+.lineBox{width:100%;float:left;margin-top:10px;background: #f7f7f7;padding:10px 20px;}
+.lineBox input[type='checkbox']{margin:8.5px 4px 8.5px 4px;}
+.lineBox button{margin-left:15px;}
+.myWeikeList{float:left;width:100%;}
+.myWeikeBox{float:left;width:100%;height:160px;position: relative;margin:10px 0;padding:20px;background: #f7f7f7;border:1px solid #f6f6f6;border-radius:5px;}
+.myWeikeBox .l{width:20px;height:120px;position: absolute;left:20px;top:20px;text-align: center;}
+.myWeikeBox .m{height:120px;margin:0 150px 0 40px;overflow: hidden;position: relative;}
+.myWeikeBox .m .headerImg{width:200px;height:120px;position: absolute;top:0;left:0;}
+.myWeikeBox .m .headerImg img{width:100%;height:100%;}
+.myWeikeBox .m .infoBox{margin-left:210px;}
+.myWeikeBox .m .infoBox .info-title{width:100%;height:40px;line-height:40px;}
+.myWeikeBox .m .infoBox .info-title a{font-size: 18px;text-decoration:none;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.myWeikeBox .m .infoBox .info-publisher{width:100%;margin-top:5px;margin-bottom:2px;}
+.myWeikeBox .m .infoBox .info-wkinfo{width:100%;margin:2px;}
+.myWeikeBox .m .infoBox .info-wkinfo a{text-decoration:none;}
+.myWeikeBox .m .infoBox .info-count{width:100%;height:30px;line-height:30px;}
+.myWeikeBox .r{width:150px;height:120px;position: absolute;right:20px;top:20px;text-align: center;border-left:1px solid #dddddd;padding-left:20px;}
+.myWeikeBox .r span.readCount{width:100%;height:60px;line-height:80px;float:left;text-align: center;font-size: 18px;}
+.myWeikeBox .r span.praiseNum{width:50%;height:60px;line-height:20px;float:left;text-align: center;}
+.myWeikeBox .r span.commentNum{width:50%;height:60px;line-height:20px;float:left;text-align: center;}
+
+
+#detailForm .headerImg{width:200px;height:120px;}
+#detailForm .headerImg img{width:100%;height:100%;}
+#detailForm .treeBox{width:100%;height:150px;border:1px solid #eee;border-radius:5px;padding:8px;}
+#detailForm .detail-content{width:100%;height:150px;}
+ul#enclosure{width:100%;margin-top:-5px;}
+ul#enclosure li{width:100%;height:30px;line-height:30px;}
+ul#enclosure li a{max-width:100%;display:inline-block;padding-top:7px;height:30px;line-height:30px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.fileCount{float:left;height:46px;line-height:46px;}
+
+.wkgcTree .ztree LI{
+	line-height:30px;
+	
+}
+.wkgcTree .ztree LI SPAN.ico_docu.button{
+	background-position:0% 0%;
+}
+.wkgcTree .ztree LI SPAN.ico_open.button{
+	background-position:0% 0%;
+}
+.wkgcTree .ztree LI SPAN.ico_close.button{
+	background-position:0% 0%;
+}
+.wkgcTree .ztree LI A.curSelectedNode{
+	background-color:#ddd;
+	height:30px;
+	border:0px;
+}
+.wkgcTree .ztree LI SPAN.switch.button{
+	width:10px;
+}
+.wkgcTree .ztree LI SPAN.button{
+	height:30px;
+	line-height:30px;
+	background:url(../img/line3.png) no-repeat 15px center;
+	background-position:0% 0%;
+}
+.wkgcTree .ztree LI A{
+	height:30px;
+}
+.wkgcTree {
+	background:url(../img/line5.png) repeat-y 22px center;
+}
+.wkgcTree .ztree LI SPAN{
+	height:30px;
+	line-height:30px;
+	font-weight:normal;
+	font-size:14px;
+	font-family:"Microsoft Yahei",Tahoma,Arial,sans-serif;
+}
+.wkgcTree .ztree LI SPAN.level1{
+	display:none;
+}
+.wkgcTree .ztree LI a.level1 .ico_docu{
+	background:none;
+}

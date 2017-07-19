@@ -1,0 +1,48 @@
+
+.ghbb-mask,
+.ghbb-box {
+    display: none;
+    position: fixed;
+}
+
+.ghbb-mask {
+    left: 0;
+    top: 0;
+    z-index: 1051;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+.ghbb-box {
+    left: 50%;
+    top: 50%;
+    z-index: 1052;
+    margin-top: -150px;
+    margin-left: -160px;
+    width: 220px;
+}
+
+.ghbb-box .ghbb-main {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.ghbb-left,.ghbb-right{
+	display: inline-block;
+}
+.ghbb-left{
+	width:50%;
+}
+.ghbb-right{
+	width:50%;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.ghbb-box .pop-img {
+	width: 100%;
+}

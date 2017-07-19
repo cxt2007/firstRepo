@@ -1,0 +1,99 @@
+.container_24 { width: 100%;}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14, .grid_15, .grid_16, .grid_17, .grid_18, .grid_19, .grid_20, .grid_21, .grid_22, .grid_23, .grid_24 {
+display: inline; float: left; height: 50px; line-height: 38px;table-layout: fixed;word-break: break-all;}
+.container_24 .grid_1  { width: 4.16%   }
+.container_24 .grid_2  { width: 8.33%   }
+.container_24 .grid_3  { width: 12.5%;*width:12.40%;  }
+.container_24 .grid_4  { width: 16.66%  }
+.container_24 .grid_5  { width: 20.83%  }
+.container_24 .grid_6  { width: 25%     }
+.container_24 .grid_7  { width: 29.16%  }
+.container_24 .grid_8  { width: 33%  	}
+.container_24 .grid_9  { width: 37.5%   }
+.container_24 .grid_10 { width: 41.66%  }
+.container_24 .grid_11 { width: 45.83%  }
+.container_24 .grid_12 { width: 50%     }
+.container_24 .grid_13 { width: 54.16%  }
+.container_24 .grid_14 { width: 58.33%  }
+.container_24 .grid_15 { width: 62.5%   }
+.container_24 .grid_16 { width: 66.66%  }
+.container_24 .grid_17 { width: 70.83%  }
+.container_24 .grid_18 { width: 75%     }
+.container_24 .grid_19 { width: 79.16%  }
+.container_24 .grid_20 { width: 83.33%  }
+.container_24 .grid_21 { width: 87.5%   }
+.container_24 .grid_22 { width: 91.66%  }
+.container_24 .grid_23 { width: 95.83%  }
+.container_24 .grid_24 { width: 100%    }
+
+.container_24 input.form-button { border: 1px solid #ddd; padding: 5px; background: #F2F2F2; cursor: pointer; }
+.form-txt {
+    line-height: 22px; width: 98.5%; margin-top:5px; border: 1px solid #ccc; border-radius:1px;
+}
+.grid_ctt{color:#000;}
+input.form-txt{height: 24px;text-indent:5px;*padding-left:1%;*text-indent:0;*width:98%;}
+input.form-txt:focus,textarea.form-txt:focus,select.form-txt:focus{border:1px solid #43B1DB;}
+textarea.form-txt{ word-break: break-all;padding:0.5%;}
+select.form-txt{height:21px; width: 99%; }
+.hidden{display:none;}
+
+.form-select{ width: 99%; font-size: 12px; border: 1px solid #ccc;height: 24px;}
+.form-lbl{ width: 99%;font-family:'microsoft yahei';font-size:18px;}
+.form-ctt{color:#333;}
+
+.alpha { margin-left: 0; }
+.omega { margin-right: 0; }
+
+.clearLine { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+.form-req { 
+	color: #ff0000;
+	line-height: 45px;
+	padding: 0 5px;
+	font-family: Arial;
+	font-size: 20px;
+	vertical-align: bottom;
+}
+.lable-right { text-align: right; }
+.lable-center{ text-align: center; }
+
+.long-text { height: auto; overflow: hidden; zoom: 1; }
+.heightAuto { overflow: hidden; height: auto; zoom: 1; line-height: 22px; *white-space:normal;word-break: break-all; }
+.defaultButton { padding: 0 5px; *padding:3px 0 0 0;height: 25px;cursor:pointer;border:1px solid #ccc;}
+
+.container_24 textarea { word-break: break-all; word-wrap: break-word;overflow-y:auto; line-height:1.4em;}
+.container_24 input{*background:none;font-family:'microsoft yahei';vertical-align:middle;}
+.container_24 input[readonly]{background:rgb(240, 240, 240) url('../images/newStyle/shadow_gray.png') left top no-repeat\9;}
+.container_24 .hasDatepicker[readonly]{background: #fff\9;}
+.container_24 input[type="text"]:hover{
+	border:1px solid #09a8a0;
+}
+.container_24 .hasDatepicker:read-only, .container_24 .hasDatepicker[readonly] { background: #fff; }
+.container_24 .hasDatepicker {  *background-color:expression((this.readOnly && this.readOnly == true)? "#ffffff":"");}
+
+.formPanel{padding:10px 0;margin:0 20px;border-bottom:1px dotted #ccc;overflow:hidden;}
+.formPanel h3.formtit{font:normal 13px/24px '';}
+.formPanel .lable-right{color:#444;}
+.formPanel label input{vertical-align: middle;}
+.formPanel label.formLabel{margin-right:10px;*margin-right:6px;}
+
+/* �¸İ��������ʽ */
+.includeHeader{
+    margin:0 10px 10px;
+    *margin:0px;
+    padding:10px 0 10px 110px;
+    min-height:140px;
+    background-color:#FFF;
+    border-bottom:1px dashed #ccc;
+}
+/*wk*/
+.label-right ,.lable-right {
+	text-align: right;
+}
+.label-center {
+	text-align: center;
+}
+.container_24 .hasDatepicker[readonly] {
+	background: url('/resource/images/dateIcon.png') right 6px no-repeat;
+	cursor: pointer;
+}

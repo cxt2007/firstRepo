@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx" 
+	   xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	   xmlns:jee="http://www.springframework.org/schema/jee" 
+	   xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd 
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+		http://www.springframework.org/schema/task  
+		http://www.springframework.org/schema/task/spring-task-3.1.xsd" default-lazy-init="true">
+
+	<description>Spring公共配置 </description>
+	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->    
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >  
+		<property name="messageConverters">   
+	         <list>   
+	             <bean class = "org.springframework.http.converter.StringHttpMessageConverter">   
+	                <property name = "supportedMediaTypes">
+	                      <list>
+	                          <value>text/html;charset=UTF-8</value>   
+	                     </list>   
+	                </property>   
+	             </bean>   
+	         </list>   
+	   </property>  
+	</bean>  
+
+	<!-- Jpa Entity Manager 配置 -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"> 
+		<property name="dataSource" ref="dataSource"/>
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
+		<property name="packagesToScan" value="com.space.wechat"/>
+		
+	<!-- 	<property name="persistenceUnitName" value="defaultPU"/>
+		<property name="jpaVendorAdapter" ref="eclipseJpaVendorAdapter"/>
+		<property name="persistenceXmlLocation" value="classpath*:META-INF/persistence.xml" /> -->
+		
+		<property name="jpaProperties">
+			<props>
+				<!-- 命名规则 My_NAME->MyName -->
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- <bean id="eclipseJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
+	   <property name="database" value="MYSQL" />  
+	   <property name="showSql" value="true"/>  
+       <property name="generateDdl" value="false"/>   
+	</bean> -->
+	
+	
+	<bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform">
+			<bean factory-method="getDialect" class="org.springside.modules.persistence.Hibernates">
+				<constructor-arg ref="dataSource"/>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- Spring Data Jpa配置 -->
+ 	<jpa:repositories base-package="com.space.wechat"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+   
+	<!-- Jpa 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory"/>
+	</bean>
+	
+   <!-- 文件上传支持 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 1024 * 1024 * 100 >>> 100M -->
+		<property name="maxUploadSize" value="104857600" />
+	</bean>
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+	
+		<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射,解决@ResponseBody乱码问题, 需要在annotation-driven和component-scan之前,否则乱码问题同样无法解决 -->
+	<!--Spring3.1推荐使用RequestMappingHandlerAdapter -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/html;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<!-- 文本邮件服务类
+	<bean id="simpleMailService" class="com.space.wechat.util.email.SimpleMailService">
+		<property name="mailSender" ref="mailSender" />
+	</bean>  -->
+	 
+
+	<!-- JSR303 Validator定义 
+ 	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+	-->
+	<!-- production环境 -->
+ 	<beans profile="production">
+ 	
+	 	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+		<context:component-scan base-package="org.cxt">
+			<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		</context:component-scan>
+	
+ 		<context:property-placeholder ignore-unresolvable="true"
+			location="classpath*:/application.properties" />	
+				 
+	   
+ 
+ 
+ 		<!-- 数据源配置, 使用DBCP数据库连接池 -->
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+			<!-- Connection Info -->
+			<property name="driverClassName" value="${jdbc.driver}" />
+			<property name="url" value="${jdbc.url}" />
+			<property name="username" value="${jdbc.username}" />
+			<property name="password" value="${jdbc.password}" />
+		
+			<!-- Connection Pooling Info -->
+			<property name="maxActive" value="${druid.maxActive}" /> 
+			<property name="maxIdle" value="${druid.maxIdle}" /> 
+			<property name="defaultAutoCommit" value="false" />
+			<!-- 连接Idle一个小时后超时 -->
+			<property name="timeBetweenEvictionRunsMillis" value="3600000" />
+			<property name="minEvictableIdleTimeMillis" value="3600000" />
+		</bean>
+		 
+		
+		<!-- 邮件发送器 -->
+		<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+			<!-- 配置greenmail simulatore中的默认值 -->
+			<property name="host" value="smtp.exmail.qq.com" />
+	       	<property name="port"><value>465</value></property>
+	       	<property name="protocol"><value>smtp</value></property>
+			<property name="username" value="${mail.username}" />
+			<property name="password" value="${mail.password}" />
+			<property name="defaultEncoding" value="UTF-8"/>
+			<property name="javaMailProperties">
+				<props>
+	            <prop key="mail.smtps.auth">true</prop>
+	            <prop key="mail.smtp.ssl.enable">true</prop>
+	            <prop key="mail.transport.protocol">smtps</prop>
+				</props>
+			</property>
+		</bean>
+		
+		<!-- 数据源配置,使用应用服务器的数据库连接池 -->
+		<!--<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/ExampleDB" />-->
+	</beans>
+	
+</beans>

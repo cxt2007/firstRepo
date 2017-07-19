@@ -1,0 +1,24 @@
+ul,li{list-style:none;padding:0;margin:0;}
+.cl{clear:both;}
+.width_200{width:200px;padding:0;margin:0;}
+.no_border{border:none !important;}
+.no_m_l{margin-left:0 !important;}
+.no_p{padding:0 !important;}
+
+
+.searchUl{padding:10px 20px;border-bottom:1px solid #dbe1e8;}
+.searchUl li{margin:5px;display:inline-block;}
+.searchBtn{padding:5px 10px;border:1px solid #dbe1e8;background:#eee;border-radius:5px;cursor:pointer;}
+.searchBtnActive{background:#7abce7;color:#fff;border:1px solid #fff;}
+
+.examUl{margin:-10px;overflow:hidden;}
+.examUl li{width:300px;height:160px;border:1px solid #ccc;background:#f2f2f2;border-radius:5px;padding:10px;float:left;margin:10px;}
+.examUl li.noData{margin:10px 50px;width:auto;height:160px;line-height:160px;text-align:center;background:#f2f2f2;padding:0;float:none;}
+.examUl li .examTitle{width:100%;height:30px;line-height:30px;font-size:16px;color:#32ad64;font-weight:bold;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.examUl li .examTitle a{color:#32ad64;}
+.examUl li .examTime{width:100%;height:30px;line-height:30px;}
+.examUl li .examTime span{float:left;margin-right:10px;}
+.examUl li .examTime span{float:left;}
+.examUl li .examBj{width:100%;line-height:20px;overflow:hidden;margin-bottom:10px;display: -webkit-box;text-overflow: ellipsis;overflow : hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.examUl li .examCourse{width:100%;height:30px;overflow:hidden;}
+.examUl li .examCourse span{float:left;border:1px solid #eee;background:#ccc;padding:5px;border-radius:5px;margin-right:3px;}

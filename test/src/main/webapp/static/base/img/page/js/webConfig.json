@@ -1,0 +1,113 @@
+[
+  {
+    "name": "weixt",
+    "host": "",
+    "orgcode":"",
+    "config": {
+      "title": "微校通",
+      "indexLogin_logo": {
+        "src": "/static/pixelcave/page/img/logo_left.png",
+        "alt": "光海微校通"
+      },
+      "indexLogin_webStatement": true,
+      "login_title": "登录光海微校通",
+	  "login_logo": {
+	    "src": "/static/pixelcave/page/img/logo.png",
+		"alt": "光海微校通"
+	  },
+	  "login_bg": {
+	    "src": "/static/pixelcave/page/img/bodyBg.png",
+	    "alt": "光海微校通"
+	  },
+	  "login_link": true,
+	  "web_favicon_icon": "/static/pixelcave/backend/img/favicon.ico",
+	  "contact_information": "<li><span class='left'>电话：</span><span class='right'>0571-89937820</span></li><li><span class='left'>QQ：</span><span class='right'>2715199690</span></li>",
+	  "weixt_about_title":"光海微校通",
+	  "weixt_about_logo":"/static/styles/mobile/images/weixiaotonglogo.png"
+    }
+  },
+  {
+    "name": "renrentong",
+    "host":"rrt.weixiaotong.com.cn,rrt.spacetech.com.cn",
+    "orgcode":"",
+    "config": {
+      "title": "人人通平台",
+      "indexLogin_logo": {
+        "src": "/static/pixelcave/page/img/logo_left_renrentong.png",
+		"alt": "人人通平台"
+	  },
+	  "indexLogin_webStatement": false,
+	  "login_title": "登录人人通平台",
+	  "login_logo": {
+	    "src": "/static/pixelcave/page/img/logo_renrentong.png",
+	    "alt": "人人通平台"
+	  },
+	  "login_bg": {
+	    "src": "/static/pixelcave/page/img/bodyBg.png",
+	    "alt": "人人通平台"
+	  },
+	  "login_link": false,
+	  "web_favicon_icon": "",
+	  "contact_information": "<li><span class='left'>QQ：</span><span class='right'>2528233842</span></li><li><span class='left'>邮箱：</span><span class='right'>renrentong@enjoyor.info</span></li>",
+      "weixt_about_title":"光海微校通",
+	  "weixt_about_logo":"/static/styles/mobile/images/weixiaotonglogo.png"
+    }
+  },
+  {
+    "name": "neimeng",
+    "host":"nmwxy.spaceyun.com.cn,nmwxy.weixiaotong.com.cn",
+    "orgcode":"",
+    "config": {
+      "title": "内蒙微校园",
+      "indexLogin_logo": {
+        "src": "/static/pixelcave/page/img/logo_left_neimeng.png",
+        "alt": "内蒙微校园"
+      },
+      "indexLogin_webStatement": false,
+      "login_title": "登录内蒙微校园",
+	  "login_logo": {
+	    "src": "/static/pixelcave/page/img/logo_left_neimeng.png",
+		"alt": "内蒙微校园"
+	  },
+	  "login_bg": {
+	    "src": "/static/pixelcave/page/img/bodyBg.png",
+	    "alt": "内蒙微校园"
+	  },
+	  "login_link": false,
+	  "web_favicon_icon": "",
+	  "contact_information": "",
+	  "weixt_about_title":"内蒙微校园",
+	  "weixt_about_logo":"",
+	  "weixt_about":"内蒙微校园介绍",
+	  "weixt_aboutFoot_phone":"客服电话:04714-3973734",
+	  "weixt_aboutFoot_company":"内蒙古学酷万佳教育有限公司"
+    }
+  },
+  {
+    "name": "sqxy",
+    "host": "sqxy1.weixiaotong.com.cn,sqxy.weixiaotong.com.cn,sqxy.weixiaotong.com",
+    "orgcode":"",
+    "config": {
+      "title": "微学通",
+      "indexLogin_logo": {
+        "src": "/static/pixelcave/page/img/logo_sqxy.png",
+        "alt": "光海微学通"
+      },
+      "indexLogin_webStatement": true,
+      "login_title": "登录光海微学通",
+	  "login_logo": {
+	    "src": "/static/pixelcave/page/img/logo_left_sqxy.png",
+		"alt": "光海微学通"
+	  },
+	  "login_bg": {
+	    "src": "/static/pixelcave/page/img/bodyBg.png",
+	    "alt": "光海微学通"
+	  },
+	  "login_link": true,
+	  "web_favicon_icon": "/static/pixelcave/backend/img/favicon.ico",
+	  "contact_information": "<li><span class='left'>电话：</span><span class='right'>0571-89937820</span></li><li><span class='left'>QQ：</span><span class='right'>2715199690</span></li>",
+	  "weixt_about_title":"光海微学通",
+	  "weixt_about_logo":"/static/styles/mobile/images/weixiaotonglogo.png"
+    }
+  }
+] 
